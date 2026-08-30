@@ -12,12 +12,12 @@ interface Props {
 const {
   title = SITE.ogTitle,
   description = SITE.description,
-  image = '/og-image.png',
+  image = '/og-image.svg',
   canonicalURL = Astro.url.href,
   type = 'website',
 } = Astro.props;
 
-const formattedTitle = title === SITE.name ? title : `${title} | ${SITE.name}`;
+const formattedTitle = title.includes(SITE.name) ? title : `${title} | ${SITE.name}`;
 ---
 
 <!-- Global Metadata -->

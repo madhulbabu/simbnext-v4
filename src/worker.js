@@ -7,8 +7,6 @@ export default {
       const allowedOrigins = [
         "https://www.simbnext.com",
         "https://simbnext.com",
-        "https://www.simbfore.io",
-        "https://simbfore.io",
         "https://www.simb.dev",
         "https://simb.dev",
         "https://www.simb.co.in",
@@ -38,7 +36,7 @@ export default {
         const webhookUrl =
           env.CONTACT_WEBHOOK_URL ||
           env.PUBLIC_CONTACT_WEBHOOK_URL ||
-          "https://xxn.otbix.com/webhook/simbnect-contact-form";
+          "https://xxn.otbix.com/webhook/simbnext-contact-form";
 
         try {
           const payload = await request.json();

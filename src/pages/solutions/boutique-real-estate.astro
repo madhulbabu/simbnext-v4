@@ -1,0 +1,88 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SOLUTIONS } from '@/lib/content';
+
+const solution = SOLUTIONS.find((s) => s.slug === 'boutique-real-estate')!;
+---
+
+<BaseLayout
+  title="AI Lead Operations & Marketing for Real Estate | SimbNext"
+  description="3.2-second lead response, interactive WhatsApp site visit booking, bilingual qualification (Telugu/English), and Channel Partner tracking."
+>
+  <!-- Light Header Section -->
+  <div class="pt-36 pb-20 bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
+    <div class="container-wide max-w-3xl space-y-4">
+      <span class="chip-synthesia">
+        Industry Solution
+      </span>
+      <h1 class="headline-lg text-[#0F172A] [text-wrap:balance]">
+        {solution.title}
+      </h1>
+      <p class="body-lg text-[#334155] [text-wrap:balance]">
+        {solution.description}
+      </p>
+      <div class="pt-2">
+        <a href="/contact" class="button-primary">
+          <span>Schedule a Consultation</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="py-20 bg-[#FFFFFF]">
+    <div class="container-wide max-w-4xl space-y-12">
+      <!-- Metric Banner -->
+      <div class="p-8 rounded-3xl bg-[#EFF6FF] border border-[#DBEAFE] flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xs">
+        <div>
+          <div class="text-3xl sm:text-4xl font-extrabold font-mono text-[#2563EB]">
+            {solution.stat}
+          </div>
+          <div class="text-sm font-semibold text-[#0F172A] mt-1">
+            Average Speed-to-Lead Response Latency
+          </div>
+        </div>
+        <div class="text-xs text-[#64748B] max-w-xs leading-relaxed">
+          Zero lead leakage after hours. 100% of Meta and portal inquiries engaged within seconds on WhatsApp.
+        </div>
+      </div>
+
+      <!-- Core Capabilities -->
+      <div class="space-y-6">
+        <h2 class="headline-md text-[#0F172A]">
+          Real Estate Operations Included
+        </h2>
+        <div class="grid gap-4 sm:grid-cols-2">
+          {solution.deliverables.map((d) => (
+            <div class="card-synthesia p-6">
+              <div class="text-[#2563EB] font-bold text-lg mb-2">✓</div>
+              <p class="text-sm font-medium text-[#0F172A] leading-relaxed">
+                {d}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Testimonial Quote -->
+      <div class="p-8 rounded-3xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-4 shadow-xs">
+        <div class="text-amber-500 text-sm font-semibold">★★★★★ Boutique Real Estate Partner</div>
+        <p class="text-base text-[#0F172A] italic leading-relaxed font-medium">
+          "Zero lead loss after hours. Ad clicks get qualified and booked for site visits automatically across WhatsApp and web."
+        </p>
+        <div class="text-xs text-[#64748B] font-mono pt-3 border-t border-[#E2E8F0]">
+          Ananya S. • Head of Sales • Urban Living Realty
+        </div>
+      </div>
+
+      <!-- Bottom CTA -->
+      <div class="text-center pt-6">
+        <a href="/contact" class="button-primary">
+          <span>Schedule a Consultation</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

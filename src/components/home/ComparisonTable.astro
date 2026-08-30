@@ -1,0 +1,68 @@
+---
+import { AGENCY_COMPARISON } from '@/lib/content';
+---
+
+<section id="comparison" class="py-24 md:py-32 bg-[#F8FAFC] border-b border-[#E2E8F0]">
+  <div class="container-wide">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="chip-synthesia mb-4">
+        <span>The Model Shift</span>
+      </div>
+      <h2 class="headline-lg text-[#0F172A] [text-wrap:balance]">
+        Traditional Agency Menus vs. Your Command Center
+      </h2>
+      <p class="mt-4 body-lg text-[#334155] [text-wrap:balance]">
+        See why founders switch from managing multiple conflicting agencies to subscribing to unified operational coverage.
+      </p>
+    </div>
+
+    <!-- Comparison Card -->
+    <div class="max-w-4xl mx-auto rounded-3xl border border-[#E2E8F0] bg-white overflow-hidden shadow-xs">
+      
+      <!-- Table Headers -->
+      <div class="grid grid-cols-1 md:grid-cols-2 border-b border-[#E2E8F0]">
+        <div class="p-6 bg-[#F8FAFC] border-b md:border-b-0 md:border-r border-[#E2E8F0] text-center md:text-left">
+          <span class="text-xs font-mono font-bold text-[#64748B] uppercase tracking-wider">
+            Traditional Agency & Freelancers
+          </span>
+          <h3 class="text-lg font-bold text-[#0F172A] mt-1">
+            "Pick From Our Service Menu"
+          </h3>
+        </div>
+        <div class="p-6 bg-[#EFF6FF] text-center md:text-left">
+          <span class="text-xs font-mono font-bold text-[#2563EB] uppercase tracking-wider">
+            The SIMBNEXT Model
+          </span>
+          <h3 class="text-lg font-bold text-[#2563EB] mt-1">
+            "Your Operations. Handled."
+          </h3>
+        </div>
+      </div>
+
+      <!-- Table Rows -->
+      <div class="divide-y divide-[#E2E8F0]">
+        {AGENCY_COMPARISON.map((row) => (
+          <div class="grid grid-cols-1 md:grid-cols-2 text-sm">
+            <div class="p-5 flex items-start gap-3 bg-white text-[#64748B] border-b md:border-b-0 md:border-r border-[#E2E8F0]">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500 mt-0.5 shrink-0">
+                <line x1="18" y1="6" x2="6" y2="18"/>
+                <line x1="6" y1="6" x2="18" y2="18"/>
+              </svg>
+              <span>{row.conventional}</span>
+            </div>
+            <div class="p-5 flex items-start gap-3 bg-blue-50/30 text-[#0F172A] font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#2563EB] mt-0.5 shrink-0">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>{row.simbnext}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+
+    </div>
+
+  </div>
+</section>

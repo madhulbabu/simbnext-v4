@@ -1,0 +1,221 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const DESKS = [
+  {
+    id: 'brand',
+    num: '01',
+    name: 'The Brand Desk',
+    headline: 'Your identity, refined and standardized.',
+    description: 'We craft the visual and verbal foundation of your business. No more off-brand collateral or mixed messaging. Just a clean, definitive presence.',
+    replaces: 'Freelance designers, branding agencies',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="50" cy="50" rx="34" ry="15" transform="rotate(45 50 50)" />
+        <ellipse cx="50" cy="50" rx="34" ry="15" transform="rotate(-45 50 50)" />
+        <rect x="40" y="40" width="20" height="20" rx="4" transform="rotate(45 50 50)" fill="none" stroke="currentColor" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'presence',
+    num: '02',
+    name: 'The Presence Desk',
+    headline: 'Your digital storefront, managed.',
+    description: 'We build and maintain your website, optimize for search, and govern your online reputation. You show up exactly how you want to be seen.',
+    replaces: 'Webmasters, SEO agencies, social managers',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M35 25 C35 15, 65 15, 65 25 C65 35, 75 45, 85 45 C95 45, 95 75, 85 75 C75 75, 65 65, 65 75 C65 85, 35 85, 35 75 C35 65, 25 55, 15 55 C5 55, 5 25, 15 25 C25 25, 35 35, 35 25 Z" />
+        <circle cx="50" cy="50" r="10" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'growth',
+    num: '03',
+    name: 'The Growth Desk',
+    headline: 'Predictable acquisition.',
+    description: 'We run the funnels, the ads, and the lifecycle marketing. No hype or vanity metrics. Just engineered growth that scales quietly in the background.',
+    replaces: 'Ad agencies, email marketing consultants',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="36" cy="36" r="16" />
+        <circle cx="64" cy="36" r="16" />
+        <circle cx="64" cy="64" r="16" />
+        <circle cx="36" cy="64" r="16" />
+      </svg>
+    `
+  },
+  {
+    id: 'systems',
+    num: '04',
+    name: 'The Systems Desk',
+    headline: 'Operations, automated.',
+    description: 'We integrate your CRM, build your workflows, and document the SOPs. We eliminate manual data entry so your team can focus on actual work.',
+    replaces: 'Zapier consultants, operations managers',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 16 C68 28 72 32 84 50 C72 68 68 72 50 84 C32 72 28 68 16 50 C28 32 32 28 50 16 Z" />
+        <path d="M50 32 C60 40 60 40 68 50 C60 60 60 60 50 68 C40 60 40 60 32 50 C40 40 40 40 50 32 Z" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'build',
+    num: '05',
+    name: 'The Build Desk',
+    headline: 'Software tailored to you.',
+    description: 'When off-the-shelf tools fail, we build custom portals, apps, and API integrations. Technology that fits your exact workflow.',
+    replaces: 'Dev shops, offshore engineering teams',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 15 L85 35 V70 L50 90 L15 70 V35 Z" />
+        <path d="M50 15 V90 M15 35 L85 70 M15 70 L85 35" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'ai',
+    num: '06',
+    name: 'The AI & Intelligence Desk',
+    headline: 'Data deployed intelligently.',
+    description: 'We implement chatbots, internal AI tools, and analytics dashboards. We turn raw data into actionable intelligence, automatically.',
+    replaces: 'Data analysts, AI consultants',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="10" fill="currentColor" />
+        <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(30 50 50)" />
+        <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(90 50 50)" />
+        <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(150 50 50)" />
+      </svg>
+    `
+  }
+];
+---
+
+<BaseLayout
+  title="Command Center | SIMBNEXT"
+  description="We don't just advise. We execute, manage, and optimize across six dedicated disciplines under one unified command center."
+>
+  <!-- Main Command Center Page Container -->
+  <section class="pt-36 md:pt-44 pb-20 md:pb-28 bg-white">
+    <div class="container-wide space-y-12 sm:space-y-16">
+      
+      <!-- Top Header Section (Left Title + Right Subhead) -->
+      <div class="grid gap-6 md:grid-cols-12 items-end justify-between">
+        <div class="md:col-span-6 space-y-2">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#EFF6FF] text-[#2563EB] border border-[#DBEAFE] text-xs font-mono font-bold uppercase tracking-wider mb-2">
+            <span>The Command Architecture</span>
+          </div>
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black font-display text-[#0F172A] tracking-tight leading-tight">
+            One center. <br />
+            Complete control.
+          </h1>
+        </div>
+
+        <div class="md:col-span-6 md:pl-8">
+          <p class="text-base sm:text-lg text-[#475569] leading-relaxed">
+            We channel our extensive experience and expertise into your digital operations, executing, managing, and optimizing across six synchronized disciplines.
+          </p>
+        </div>
+      </div>
+
+      <!-- Giant Stacked Monolith Container (Vibrant Dimensional Gradient + Pure White Dividers) -->
+      <div
+        class="rounded-[2.5rem] lg:rounded-[3rem] p-6 sm:p-10 lg:p-14 text-white shadow-2xl shadow-blue-900/30 border-2 border-white/40 divide-y divide-white sm:divide-white/90 overflow-hidden relative"
+        style="background: linear-gradient(145deg, #38BDF8 0%, #2563EB 48%, #1E3A8A 100%);"
+      >
+        <!-- Subtle Ambient Top Light Sheen -->
+        <div class="absolute top-0 left-1/4 right-1/4 h-36 bg-white/20 blur-3xl pointer-events-none rounded-full" aria-hidden="true"></div>
+
+        {DESKS.map((desk) => (
+          <div id={desk.id} class="py-8 sm:py-10 first:pt-2 last:pb-2 scroll-mt-28 group transition-all relative z-10">
+            <div class="grid gap-6 lg:grid-cols-12 items-center">
+              
+              <div class="lg:col-span-6 flex items-center gap-5 sm:gap-6">
+                <div class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-white/30 via-white/15 to-white/10 backdrop-blur-xl border border-white/60 shadow-[0_14px_28px_-4px_rgba(0,0,0,0.35),0_6px_12px_-2px_rgba(0,0,0,0.25),inset_0_1px_2px_rgba(255,255,255,0.6)] flex items-center justify-center p-3.5 shrink-0 group-hover:scale-105 group-hover:shadow-[0_20px_35px_-4px_rgba(0,0,0,0.45)] transition-all duration-300">
+                  <Fragment set:html={desk.svgIcon} />
+                </div>
+
+                <div class="space-y-1">
+                  <span class="text-xs font-mono font-bold uppercase tracking-wider text-sky-200">
+                    Desk {desk.num}
+                  </span>
+                  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-display text-white tracking-tight leading-tight drop-shadow-sm">
+                    {desk.name}
+                  </h2>
+                </div>
+              </div>
+
+              <div class="lg:col-span-6 space-y-2.5 lg:pl-4">
+                <p class="text-base sm:text-lg font-bold text-white leading-snug drop-shadow-xs">
+                  {desk.headline}
+                </p>
+                <p class="text-xs sm:text-sm md:text-[14.5px] text-white/95 leading-relaxed font-normal">
+                  {desk.description}
+                </p>
+                <div class="pt-1.5 flex items-center gap-2 text-xs font-mono text-sky-200">
+                  <span class="opacity-80">Replaces:</span>
+                  <span class="font-bold underline decoration-white/50">{desk.replaces}</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Bottom Trust / Brands Strip (Matching Reference Bottom Row) -->
+      <div class="pt-4 flex flex-col md:flex-row items-center justify-between gap-8 border-t border-[#E2E8F0] text-[#0F172A]">
+        <div class="flex items-center gap-4 shrink-0">
+          <span class="text-4xl sm:text-5xl font-black font-display text-[#2563EB]">150+</span>
+          <span class="text-xs text-[#64748B] font-medium max-w-[120px] leading-tight">
+            Workflows & systems automated
+          </span>
+        </div>
+
+        <!-- Integrated Stack & Standard Badges -->
+        <div class="flex flex-wrap items-center justify-center md:justify-end gap-6 sm:gap-8 text-sm font-bold font-mono text-[#64748B]">
+          <div class="flex items-center gap-2 hover:text-[#2563EB] transition-colors">
+            <span class="text-lg">⚡</span>
+            <span>NEXT.JS WEB</span>
+          </div>
+          <div class="flex items-center gap-2 hover:text-[#2563EB] transition-colors">
+            <span class="text-lg">🔄</span>
+            <span>MAKE & ZAPIER</span>
+          </div>
+          <div class="flex items-center gap-2 hover:text-[#2563EB] transition-colors">
+            <span class="text-lg">📊</span>
+            <span>META & GOOGLE ADS</span>
+          </div>
+          <div class="flex items-center gap-2 hover:text-[#2563EB] transition-colors">
+            <span class="text-lg">🤖</span>
+            <span>AI INTEL AGENTS</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-20 md:py-28 bg-[#0B0F19] text-white">
+    <div class="container-tight text-center space-y-6">
+      <h2 class="headline-lg text-white tracking-tight">
+        Build your command center.
+      </h2>
+      <p class="body-lg text-[#94A3B8] max-w-md mx-auto">
+        Schedule a 30-minute briefing to review your operational architecture.
+      </p>
+      <div class="pt-4">
+        <a href="/briefing" class="button-primary bg-[#2563EB] hover:bg-[#1D4ED8]">
+          <span>Schedule a Briefing</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,106 @@
+---
+import { NAV_LINKS } from '@/lib/site-config';
+import MobileMenu from './MobileMenu.astro';
+
+interface Props {
+  dark?: boolean;
+}
+
+const { dark = false } = Astro.props;
+---
+
+<header
+  id="main-header"
+  class:list={[
+    "fixed top-0 left-0 right-0 z-50 py-3 transition-all duration-200",
+    dark ? "bg-[#0B0F19]/90 border-b border-[#F1F5F9]/10 text-[#F1F5F9] backdrop-blur-md" : "bg-white/90 border-b border-[#E2E8F0] text-[#0F172A] backdrop-blur-md"
+  ]}
+>
+  <div class="container-wide flex items-center justify-between gap-4">
+    
+    <!-- Left: Brand Logo & Live Operations Status -->
+    <div class="flex items-center gap-3 sm:gap-3.5">
+      <a href="/" class="inline-flex items-center gap-2 group py-0.5" aria-label="SIMBNEXT Home">
+        <img
+          src={dark ? "/simbnext-logo-dark.svg" : "/simbnext-logo.svg"}
+          alt="SIMBNEXT"
+          width="135"
+          height="26"
+          class="h-6 sm:h-[26px] w-auto object-contain transition-transform group-hover:scale-105"
+        />
+      </a>
+
+      <!-- Subtle Operational Status Tag (Hidden on small mobile) -->
+      <div class="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-medium border border-emerald-500/20 bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 select-none">
+        <span class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>6 Desks Active</span>
+      </div>
+    </div>
+
+    <!-- Center: Floating Pill Navigation Bar (Body Font) -->
+    <nav class="hidden lg:flex items-center gap-1 p-1 rounded-full bg-[#F8FAFC] dark:bg-white/5 border border-[#E2E8F0] dark:border-white/10 shadow-2xs">
+      {NAV_LINKS.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            "px-4 py-1.5 rounded-full text-[13.5px] font-medium transition-all duration-150",
+            dark
+              ? "text-[#F1F5F9]/85 hover:text-white hover:bg-white/10"
+              : "text-[#334155] hover:text-[#2563EB] hover:bg-[#EFF6FF] active:scale-[0.98]"
+          ]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <!-- Right: High-Impact Briefing Action -->
+    <div class="hidden lg:flex items-center shrink-0">
+      <a
+        href="/briefing"
+        class="button-primary h-11 px-5 text-sm font-semibold rounded-[4px]"
+      >
+        <span>Schedule a Briefing</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Mobile Menu Toggle Button -->
+    <div class="lg:hidden flex items-center">
+      <button
+        id="mobile-menu-open"
+        type="button"
+        class:list={[
+          "h-10 w-10 flex items-center justify-center rounded-[4px] border transition-colors cursor-pointer active:scale-95",
+          dark ? "border-white/15 bg-white/5 hover:bg-white/10 text-white" : "border-[#E2E8F0] bg-[#F8FAFC] hover:bg-[#EFF6FF] text-[#0F172A]"
+        ]}
+        aria-label="Open Navigation Menu"
+        aria-expanded="false"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" x2="20" y1="12" y2="12"/>
+          <line x1="4" x2="20" y1="6" y2="6"/>
+          <line x1="4" x2="20" y1="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<MobileMenu />
+
+<script>
+  const header = document.getElementById('main-header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('shadow-xs');
+      } else {
+        header.classList.remove('shadow-xs');
+      }
+    });
+  }
+</script>

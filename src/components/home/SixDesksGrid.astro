@@ -1,0 +1,170 @@
+---
+interface Desk {
+  id: string;
+  name: string;
+  description: string;
+  link: string;
+  svgIcon: string;
+}
+
+const DESKS: Desk[] = [
+  {
+    id: 'brand',
+    name: 'Brand Desk',
+    description: 'Visual identity, design systems, and standardized brand guidelines for your business.',
+    link: '/command-center#brand',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="50" cy="50" rx="34" ry="15" transform="rotate(45 50 50)" />
+        <ellipse cx="50" cy="50" rx="34" ry="15" transform="rotate(-45 50 50)" />
+        <rect x="40" y="40" width="20" height="20" rx="4" transform="rotate(45 50 50)" fill="none" stroke="currentColor" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'presence',
+    name: 'Presence Desk',
+    description: 'Sub-second web performance, technical SEO, and higher search rankings.',
+    link: '/command-center#presence',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M35 25 C35 15, 65 15, 65 25 C65 35, 75 45, 85 45 C95 45, 95 75, 85 75 C75 75, 65 65, 65 75 C65 85, 35 85, 35 75 C35 65, 25 55, 15 55 C5 55, 5 25, 15 25 C25 25, 35 35, 35 25 Z" />
+        <circle cx="50" cy="50" r="10" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'growth',
+    name: 'Growth Desk',
+    description: 'Targeted high-ROAS paid customer acquisition campaigns across Meta & Google.',
+    link: '/command-center#growth',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="36" cy="36" r="16" />
+        <circle cx="64" cy="36" r="16" />
+        <circle cx="64" cy="64" r="16" />
+        <circle cx="36" cy="64" r="16" />
+      </svg>
+    `
+  },
+  {
+    id: 'systems',
+    name: 'Systems Desk',
+    description: 'CRM pipelines, automated Make/Zapier workflows, and zero manual data entry.',
+    link: '/command-center#systems',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 16 C68 28 72 32 84 50 C72 68 68 72 50 84 C32 72 28 68 16 50 C28 32 32 28 50 16 Z" />
+        <path d="M50 32 C60 40 60 40 68 50 C60 60 60 60 50 68 C40 60 40 60 32 50 C40 40 40 40 50 32 Z" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'build',
+    name: 'Build Desk',
+    description: 'Custom software, client portals, and bespoke web apps tailored to your workflow.',
+    link: '/command-center#build',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M50 15 L85 35 V70 L50 90 L15 70 V35 Z" />
+        <path d="M50 15 V90 M15 35 L85 70 M15 70 L85 35" stroke-width="3" />
+      </svg>
+    `
+  },
+  {
+    id: 'ai',
+    name: 'AI Desk',
+    description: '24/7 autonomous booking agents, instant triage, and automated executive intel.',
+    link: '/command-center#ai',
+    svgIcon: `
+      <svg viewBox="0 0 100 100" class="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="50" cy="50" r="10" fill="currentColor" />
+        <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(30 50 50)" />
+        <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(90 50 50)" />
+        <ellipse cx="50" cy="50" rx="36" ry="14" transform="rotate(150 50 50)" />
+      </svg>
+    `
+  }
+];
+---
+
+<div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
+  {DESKS.map((desk) => (
+    <div class="desk-sculpted-card group relative w-full select-none">
+      
+      <div class="absolute top-0 left-0 w-[68px] h-[68px] sm:w-[78px] sm:h-[78px] rounded-2xl bg-gradient-to-br from-[#38BDF8] via-[#2563EB] to-[#1D4ED8] flex items-center justify-center p-3 shadow-md shadow-blue-500/15 z-20 group-hover:scale-105 transition-all duration-300">
+        <Fragment set:html={desk.svgIcon} />
+      </div>
+
+      <div class="relative w-full aspect-[430/285] min-h-[265px] sm:min-h-[285px]">
+        
+        <svg
+          viewBox="0 0 430 285"
+          preserveAspectRatio="none"
+          class="absolute inset-0 w-full h-full drop-shadow-[0_10px_25px_rgba(37,99,235,0.15)] group-hover:drop-shadow-[0_16px_35px_rgba(37,99,235,0.25)] transition-all duration-300"
+        >
+          <defs>
+            <linearGradient id={`blue-grad-${desk.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38BDF8" />
+              <stop offset="50%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#1D4ED8" />
+            </linearGradient>
+          </defs>
+
+          <path
+            d="
+              M 0, 126
+              A 20,20 0 0,1 20, 106
+              L 86, 106
+              A 20,20 0 0,0 106, 86
+              L 106, 20
+              A 20,20 0 0,1 126, 0
+              L 410, 0
+              A 20,20 0 0,1 430, 20
+              L 430, 265
+              A 20,20 0 0,1 410, 285
+              L 20, 285
+              A 20,20 0 0,1 0, 265
+              Z
+            "
+            fill={`url(#blue-grad-${desk.id})`}
+          />
+        </svg>
+
+        <div class="relative z-10 w-full h-full flex flex-col justify-between p-4 sm:p-6">
+          
+          <div class="pl-[82px] sm:pl-[98px] pr-1 sm:pr-2 pt-1 space-y-2.5">
+            <p class="text-xs sm:text-[13.5px] md:text-[14px] text-white font-medium leading-snug sm:leading-relaxed">
+              {desk.description}
+            </p>
+
+            <div>
+              <a
+                href={desk.link}
+                class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white hover:text-sky-200 transition group/btn"
+              >
+                <span>LEARN MORE</span>
+                <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white text-[#2563EB] flex items-center justify-center shadow-xs group-hover/btn:scale-110 transition-transform">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 sm:w-3 sm:h-3 stroke-[3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 18l6-6-6-6"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="pt-3 pb-1 sm:pb-2 px-1 sm:px-2">
+            <a href={desk.link} class="block group-hover:translate-x-1 transition-transform">
+              <h3 class="text-2xl sm:text-[1.75rem] lg:text-[1.95rem] font-black font-display text-white tracking-tight leading-tight">
+                {desk.name}
+              </h3>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  ))}
+</div>

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/home/Hero.astro';
+import StatsBar from '@/components/home/StatsBar.astro';
+import DeskTabs from '@/components/home/DeskTabs.astro';
+import WhyChooseGrid from '@/components/home/WhyChooseGrid.astro';
+import ComparisonTable from '@/components/home/ComparisonTable.astro';
+import PackagesSection from '@/components/home/PackagesSection.astro';
+import ProcessTimeline from '@/components/home/ProcessTimeline.astro';
+import FAQAccordion from '@/components/home/FAQAccordion.astro';
+import BottomCTA from '@/components/home/BottomCTA.astro';
+import { SITE } from '@/lib/site-config';
+---
+
+<BaseLayout title={SITE.ogTitle} description={SITE.description} darkHeader={false}>
+  <Hero />
+  <StatsBar />
+  <DeskTabs />
+  <WhyChooseGrid />
+  <ComparisonTable />
+  <PackagesSection />
+  <ProcessTimeline />
+  <FAQAccordion />
+  <BottomCTA />
+</BaseLayout>

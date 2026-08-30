@@ -1,0 +1,29 @@
+{
+  "name": "simbnext",
+  "version": "3.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "build:cloudflare": "astro build",
+    "deploy:cloudflare": "wrangler deploy",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.3.3",
+    "astro": "^7.2.9",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "wrangler": "^4.127.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

@@ -1,0 +1,48 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/lib/site-config';
+---
+
+<BaseLayout
+  title="Refunds & 90-Day Comfort Guarantee | SIMBNEXT"
+  description="Our 90-Day Comfort Guarantee, SLA commitments, and transparent service terms at SIMBNEXT."
+>
+  <!-- Light Header Section -->
+  <div class="pt-36 pb-16 bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
+    <div class="container-wide max-w-3xl space-y-3">
+      <span class="chip-synthesia">Governance & Risk Reversal</span>
+      <h1 class="headline-lg text-[#0F172A]">Refunds & 90-Day Comfort Guarantee</h1>
+      <p class="text-xs text-[#64748B] font-mono">Last updated: 2026</p>
+    </div>
+  </div>
+
+  <div class="py-16 bg-[#FFFFFF]">
+    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-6 text-[#334155]">
+      <p>
+        At {SITE.legalName}, we operate on explicit Service Level Agreements (SLAs) and total accountability. Our engagement terms are designed to be completely fair, transparent, and low-friction.
+      </p>
+
+      <div class="p-6 rounded-2xl bg-[#EFF6FF] border border-[#DBEAFE] space-y-2">
+        <h2 class="text-base font-bold text-[#2563EB] m-0">The 90-Day Comfort Guarantee</h2>
+        <p class="text-sm text-[#0F172A] font-medium leading-relaxed m-0">
+          If at any point in the first 90 days you feel your digital operations aren't noticeably smoother, your communication isn't clearer, or your vendor headaches haven't disappeared—we will offboard you smoothly and refund your last month's retainer in full. No friction.
+        </p>
+      </div>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">1. Monthly Retainer Cycles</h2>
+      <p>
+        Because monthly retainers allocate dedicated specialist capacity across active Desks (Brand, Presence, Growth, Systems, Build, AI) and cloud infrastructure, standard monthly retainers outside the 90-Day Comfort Guarantee period are non-refundable once the monthly billing cycle has commenced.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">2. SLA Performance Credits</h2>
+      <p>
+        In the rare event that a critical delivery SLA or 99.8% web uptime commitment is materially breached without prior notice, we provide service credits toward your subsequent monthly retainer.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">3. Offboarding & Transition Assistance</h2>
+      <p>
+        If you ever choose to cancel, we provide full transition assistance: packaging and handing over all code, design files, CRM automations, and documentation with zero hostage-taking.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

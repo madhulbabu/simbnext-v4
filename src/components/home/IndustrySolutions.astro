@@ -1,0 +1,75 @@
+---
+import { SOLUTIONS } from '@/lib/content';
+---
+
+<section id="solutions" class="py-24 md:py-32 bg-[#FFFFFF] border-b border-[#E2E8F0]">
+  <div class="container-wide">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="chip-synthesia mb-4">
+        <span>Tailored Solutions</span>
+      </div>
+      <h2 class="headline-lg text-[#0F172A] [text-wrap:balance]">
+        Purpose-built for high-ticket industries.
+      </h2>
+      <p class="mt-4 body-lg text-[#334155] [text-wrap:balance]">
+        Custom digital department configurations engineered for the exact buyer journeys of established service businesses.
+      </p>
+    </div>
+
+    <!-- 4-Grid Solutions -->
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      {SOLUTIONS.map((sol) => (
+        <div class="card-synthesia p-6 sm:p-7 flex flex-col justify-between group hover:border-[#2563EB]/40 transition-all">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-4">
+              <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#EFF6FF] text-[#2563EB] border border-[#DBEAFE]">
+                {sol.eyebrow}
+              </span>
+            </div>
+
+            <div class="my-4 p-4 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0]">
+              <div class="text-2xl font-extrabold font-mono text-[#2563EB]">
+                {sol.stat}
+              </div>
+              <div class="text-xs text-[#64748B] font-medium mt-0.5">
+                {sol.statLabel}
+              </div>
+            </div>
+
+            <h3 class="headline-sm text-[#0F172A] mt-2">
+              {sol.title}
+            </h3>
+
+            <p class="mt-2.5 text-xs text-[#64748B] leading-relaxed">
+              {sol.description}
+            </p>
+
+            <ul class="mt-4 space-y-2 text-xs text-[#334155]">
+              {sol.deliverables.map((item) => (
+                <li class="flex items-start gap-2">
+                  <span class="text-[#2563EB] font-bold">✓</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-[#E2E8F0]">
+            <a
+              href={`/solutions/${sol.slug}`}
+              class="inline-flex items-center gap-1.5 text-xs font-bold text-[#2563EB] hover:underline group-hover:translate-x-1 transition-transform"
+            >
+              <span>Explore Solution</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+
+  </div>
+</section>

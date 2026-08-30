@@ -1,0 +1,28 @@
+---
+const STATS = [
+  { value: '6 Desks', label: 'Synchronized Under 1 Command Center' },
+  { value: '1 Ops Lead', label: 'Single Point of Contact (Zero Finger-Pointing)', highlight: true },
+  { value: '15-Min', label: 'Monday Executive Briefing & Live Status' },
+  { value: '90-Day', label: 'Comfort Guarantee (100% Risk-Free Commitment)' },
+];
+---
+
+<div class="bg-white text-[#0F172A] py-12 border-b border-[#E2E8F0]">
+  <div class="container-wide">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      {STATS.map((s) => (
+        <div class="p-6 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] hover:border-[#2563EB]/30 transition-colors">
+          <div class:list={[
+            "text-2xl sm:text-3xl lg:text-4xl font-extrabold font-display tracking-tight",
+            s.highlight ? "text-[#2563EB]" : "text-[#0F172A]"
+          ]}>
+            {s.value}
+          </div>
+          <div class="text-xs sm:text-sm text-[#64748B] mt-2 font-medium leading-snug">
+            {s.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,244 @@
+---
+// Hero Component
+---
+
+<section class="relative overflow-hidden bg-gradient-to-b from-[#EFF6FF]/70 via-[#F8FAFC] to-white text-[#0F172A] pt-32 sm:pt-36 lg:pt-40 pb-20 md:pb-28 border-b border-[#E2E8F0]">
+  
+  <!-- Subtle ambient background grid & radial glow -->
+  <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(#DBEAFE_1px,transparent_1px)] [background-size:24px_24px] opacity-60"></div>
+  <div class="pointer-events-none absolute top-10 left-1/2 -translate-x-1/2 w-[900px] h-[450px] bg-gradient-to-b from-[#2563EB]/8 via-[#38BDF8]/4 to-transparent rounded-full blur-[100px]" aria-hidden="true"></div>
+
+  <div class="container-wide relative z-10">
+    <div class="grid lg:grid-cols-[1.1fr_1.3fr] xl:grid-cols-[1fr_1.4fr] gap-12 lg:gap-8 items-center">
+      
+      <!-- LEFT COLUMN: Headline & Value Proposition with Zero-Overlap Flex Rail -->
+      <div class="flex items-stretch gap-6 sm:gap-8">
+        
+        <!-- Left Vertical Rail (Flex column - cannot overlap text) -->
+        <div class="hidden md:flex flex-col items-center justify-between border-r border-[#CBD5E1]/80 pr-4 shrink-0 select-none py-1">
+          <div class="h-10 w-[2px] bg-gradient-to-b from-transparent to-[#2563EB]"></div>
+          <span class="text-[10px] font-mono font-bold tracking-[0.25em] text-[#64748B] uppercase [writing-mode:vertical-lr] rotate-180 py-4">
+            Single Accountability. Complete Peace of Mind.
+          </span>
+          <div class="flex flex-col items-center gap-1.5">
+            <span class="h-2 w-2 rounded-full bg-[#10B981] animate-pulse"></span>
+            <div class="h-10 w-[2px] bg-gradient-to-t from-transparent to-[#10B981]"></div>
+          </div>
+        </div>
+
+        <!-- Main Headline & Description -->
+        <div class="space-y-4">
+          
+          <!-- Mobile-only top indicator badge -->
+          <div class="md:hidden inline-flex items-center gap-2 px-3 py-1 rounded-full text-[11px] font-mono font-bold uppercase tracking-wider bg-white text-[#2563EB] border border-[#DBEAFE] shadow-xs mb-2">
+            <span class="h-2 w-2 rounded-full bg-[#10B981] animate-pulse"></span>
+            <span>Single Accountability · 6 Desks</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-black font-display tracking-tight text-[#0F172A] leading-[1.02] uppercase">
+            Your Digital<br />
+            Operations.<br />
+            <span class="bg-gradient-to-r from-[#0284C7] via-[#2563EB] to-[#1E3A8A] bg-clip-text text-transparent">
+              Handled.
+            </span>
+          </h1>
+
+          <div class="w-16 h-1 bg-[#2563EB] my-5 rounded-full"></div>
+
+          <div class="space-y-2 text-base sm:text-lg text-[#334155] leading-relaxed max-w-lg">
+            <p>
+              We run your brand, marketing, systems, and tech through a single command center.
+            </p>
+            <p class="font-bold text-[#0F172A]">
+              You go back to running your business.
+            </p>
+          </div>
+
+          <!-- CTAs -->
+          <div class="pt-6 flex flex-wrap items-center gap-4 sm:gap-6">
+            <a
+              href="/briefing"
+              class="button-primary h-11 px-6 text-sm font-semibold rounded-[4px]"
+            >
+              <span>Schedule a Briefing</span>
+              <span class="text-white text-base font-bold">→</span>
+            </a>
+
+            <a
+              href="#desks"
+              class="inline-flex items-center gap-1.5 text-xs sm:text-sm font-mono font-bold uppercase tracking-wider text-[#0F172A] hover:text-[#2563EB] transition-colors py-2 group"
+            >
+              <span>See How It Works</span>
+              <span class="transition-transform group-hover:translate-x-1 text-[#2563EB]">›</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN: The 6-Desk Orbit Radar Command Center -->
+      <div class="relative flex items-center justify-center select-none py-6">
+        
+        <!-- Radar Container (SVG Background Rings + HTML Overlay Nodes) -->
+        <div class="relative w-full max-w-[560px] aspect-square flex items-center justify-center">
+          
+          <!-- Concentric Orbit Rings & Diagonal Crosshairs (SVG) -->
+          <svg class="absolute inset-0 w-full h-full text-[#CBD5E1]" viewBox="0 0 500 500" fill="none">
+            <!-- Center Crosshairs -->
+            <line x1="250" y1="20" x2="250" y2="480" stroke="currentColor" stroke-dasharray="2 3" stroke-opacity="0.6"/>
+            <line x1="20" y1="250" x2="480" y2="250" stroke="currentColor" stroke-dasharray="2 3" stroke-opacity="0.6"/>
+            
+            <!-- Diagonal Radial Lines pointing to 6 Desks -->
+            <line x1="250" y1="250" x2="100" y2="100" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.8"/>
+            <line x1="250" y1="250" x2="400" y2="100" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.8"/>
+            <line x1="250" y1="250" x2="450" y2="250" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.8"/>
+            <line x1="250" y1="250" x2="400" y2="390" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.8"/>
+            <line x1="250" y1="250" x2="100" y2="390" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.8"/>
+            <line x1="250" y1="250" x2="50" y2="250" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.8"/>
+
+            <!-- Concentric Orbit Circles -->
+            <circle cx="250" cy="250" r="70" stroke="currentColor" stroke-opacity="0.5"/>
+            <circle cx="250" cy="250" r="110" stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.7"/>
+            <circle cx="250" cy="250" r="155" stroke="currentColor" stroke-opacity="0.5"/>
+            <circle cx="250" cy="250" r="200" stroke="currentColor" stroke-dasharray="2 4" stroke-opacity="0.8"/>
+            <circle cx="250" cy="250" r="235" stroke="currentColor" stroke-opacity="0.4"/>
+
+            <!-- Royal Blue & Emerald Accent Dots at Nodes -->
+            <circle cx="100" cy="100" r="3.5" fill="#2563EB"/>
+            <circle cx="140" cy="140" r="2.5" fill="#0F172A"/>
+            <circle cx="400" cy="100" r="3.5" fill="#2563EB"/>
+            <circle cx="360" cy="140" r="2.5" fill="#0F172A"/>
+            <circle cx="450" cy="250" r="3.5" fill="#2563EB"/>
+            <circle cx="405" cy="250" r="2.5" fill="#0F172A"/>
+            <circle cx="400" cy="390" r="3.5" fill="#2563EB"/>
+            <circle cx="360" cy="350" r="2.5" fill="#0F172A"/>
+            <circle cx="100" cy="390" r="3.5" fill="#2563EB"/>
+            <circle cx="140" cy="350" r="2.5" fill="#0F172A"/>
+            <circle cx="50" cy="250" r="3.5" fill="#2563EB"/>
+            <circle cx="95" cy="250" r="2.5" fill="#0F172A"/>
+          </svg>
+
+          <!-- Center Hub: Glowing Dark Badge with official simbnext-circle.svg -->
+          <div class="relative z-20 h-24 w-24 sm:h-28 sm:w-28 rounded-full bg-[#0B0F19] border-4 border-white shadow-2xl flex items-center justify-center p-2 sm:p-2.5 group">
+            <!-- Ambient Pulsing Glow Ring -->
+            <div class="absolute inset-0 rounded-full bg-[#2563EB]/35 animate-ping opacity-40 pointer-events-none"></div>
+            
+            <!-- Official SIMBNEXT Circle Emblem -->
+            <img
+              src="/simbnext-circle.svg"
+              alt="SIMBNEXT Command Center"
+              width="112"
+              height="112"
+              class="relative z-10 w-full h-full object-contain transition-transform duration-300 group-hover:scale-110 drop-shadow-lg"
+            />
+          </div>
+
+          <!-- DESK NODE 1: BRAND (Top-Left, 10 o'clock) -->
+          <a href="#desks" class="absolute top-[8%] left-[2%] sm:left-[5%] flex items-start gap-2.5 group hover:scale-105 transition-transform z-20 text-left">
+            <div class="h-8 w-8 rounded-lg bg-white border border-[#E2E8F0] shadow-xs flex items-center justify-center text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white group-hover:border-[#2563EB] transition-colors shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-extrabold font-display tracking-wider uppercase text-[#0F172A] group-hover:text-[#2563EB]">
+                Brand
+              </div>
+              <div class="text-[10px] sm:text-[11px] text-[#64748B] font-medium leading-tight mt-0.5">
+                Identity. Voice.<br />Design.
+              </div>
+            </div>
+          </a>
+
+          <!-- DESK NODE 2: PRESENCE (Top-Right, 2 o'clock) -->
+          <a href="#desks" class="absolute top-[8%] right-[2%] sm:right-[5%] flex items-start gap-2.5 group hover:scale-105 transition-transform z-20 text-left">
+            <div class="h-8 w-8 rounded-lg bg-white border border-[#E2E8F0] shadow-xs flex items-center justify-center text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white group-hover:border-[#2563EB] transition-colors shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-extrabold font-display tracking-wider uppercase text-[#0F172A] group-hover:text-[#2563EB]">
+                Presence
+              </div>
+              <div class="text-[10px] sm:text-[11px] text-[#64748B] font-medium leading-tight mt-0.5">
+                Web. Search.<br />Reputation.
+              </div>
+            </div>
+          </a>
+
+          <!-- DESK NODE 3: AI & INTEL (Mid-Left, 9 o'clock) -->
+          <a href="#desks" class="absolute top-[44%] left-0 sm:left-[2%] flex items-start gap-2.5 group hover:scale-105 transition-transform z-20 text-left">
+            <div class="h-8 w-8 rounded-lg bg-white border border-[#E2E8F0] shadow-xs flex items-center justify-center text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white group-hover:border-[#2563EB] transition-colors shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-extrabold font-display tracking-wider uppercase text-[#0F172A] group-hover:text-[#2563EB]">
+                AI & Intel
+              </div>
+              <div class="text-[10px] sm:text-[11px] text-[#64748B] font-medium leading-tight mt-0.5">
+                Intelligence.<br />Data. AI.
+              </div>
+            </div>
+          </a>
+
+          <!-- DESK NODE 4: GROWTH (Mid-Right, 4 o'clock) -->
+          <a href="#desks" class="absolute top-[44%] right-0 sm:right-[2%] flex items-start gap-2.5 group hover:scale-105 transition-transform z-20 text-left">
+            <div class="h-8 w-8 rounded-lg bg-white border border-[#E2E8F0] shadow-xs flex items-center justify-center text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white group-hover:border-[#2563EB] transition-colors shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-extrabold font-display tracking-wider uppercase text-[#0F172A] group-hover:text-[#2563EB]">
+                Growth
+              </div>
+              <div class="text-[10px] sm:text-[11px] text-[#64748B] font-medium leading-tight mt-0.5">
+                Acquisition.<br />Lifecycle.
+              </div>
+            </div>
+          </a>
+
+          <!-- DESK NODE 5: BUILD (Bottom-Left, 7 o'clock) -->
+          <a href="#desks" class="absolute bottom-[8%] left-[2%] sm:left-[5%] flex items-start gap-2.5 group hover:scale-105 transition-transform z-20 text-left">
+            <div class="h-8 w-8 rounded-lg bg-white border border-[#E2E8F0] shadow-xs flex items-center justify-center text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white group-hover:border-[#2563EB] transition-colors shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-extrabold font-display tracking-wider uppercase text-[#0F172A] group-hover:text-[#2563EB]">
+                Build
+              </div>
+              <div class="text-[10px] sm:text-[11px] text-[#64748B] font-medium leading-tight mt-0.5">
+                Custom Software.<br />Integrations.
+              </div>
+            </div>
+          </a>
+
+          <!-- DESK NODE 6: SYSTEMS (Bottom-Right, 5 o'clock) -->
+          <a href="#desks" class="absolute bottom-[8%] right-[2%] sm:right-[5%] flex items-start gap-2.5 group hover:scale-105 transition-transform z-20 text-left">
+            <div class="h-8 w-8 rounded-lg bg-white border border-[#E2E8F0] shadow-xs flex items-center justify-center text-[#2563EB] group-hover:bg-[#2563EB] group-hover:text-white group-hover:border-[#2563EB] transition-colors shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="text-xs sm:text-sm font-extrabold font-display tracking-wider uppercase text-[#0F172A] group-hover:text-[#2563EB]">
+                Systems
+              </div>
+              <div class="text-[10px] sm:text-[11px] text-[#64748B] font-medium leading-tight mt-0.5">
+                CRM. Workflows.<br />Automation.
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

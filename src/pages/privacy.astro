@@ -1,0 +1,46 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/lib/site-config';
+---
+
+<BaseLayout
+  title="Privacy Policy | SIMBNEXT"
+  description="Privacy policy and data governance practices at SIMBNEXT."
+>
+  <!-- Light Header Section -->
+  <div class="pt-36 pb-16 bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
+    <div class="container-wide max-w-3xl space-y-3">
+      <span class="chip-synthesia">Governance & Compliance</span>
+      <h1 class="headline-lg text-[#0F172A]">Privacy Policy</h1>
+      <p class="text-xs text-[#64748B] font-mono">Last updated: 2026</p>
+    </div>
+  </div>
+
+  <div class="py-16 bg-[#FFFFFF]">
+    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-6 text-[#334155]">
+      <p>
+        At {SITE.legalName} ("SIMBNEXT"), we respect your privacy and are committed to protecting any personal, commercial, and operational business data you share with us.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">1. Information We Collect</h2>
+      <p>
+        We collect contact information (such as name, email, phone number, company website, and operational bottlenecks) submitted through our briefing request and contact forms. In active partnerships, we handle client knowledge base assets, brand guidelines, and CRM connections solely to operate active Desks.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">2. How We Use Data</h2>
+      <p>
+        Data is utilized strictly to provide digital operations services, deliver Service Level Agreements (SLAs), configure AI lead agents, and communicate weekly executive briefings. We never sell, rent, or trade client data to third parties.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">3. Data Security & Storage</h2>
+      <p>
+        All lead interactions, knowledge base vectors, and API communications are secured using industry-standard encryption protocols and enterprise cloud infrastructure.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">4. Contact Inquiries</h2>
+      <p>
+        For any privacy or data compliance questions, contact us at <a href={`mailto:${SITE.email}`} class="text-[#2563EB] underline">{SITE.email}</a>.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

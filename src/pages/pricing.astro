@@ -1,0 +1,185 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Pricing | SIMBNEXT"
+  description="Simple retainers. Zero surprises. Choose the level of operational control your business needs."
+>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-white text-[#0F172A] pt-36 md:pt-44 pb-20 md:pb-24 border-b border-[#E2E8F0]">
+    <div class="container-wide text-center space-y-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-white text-[#2563EB] border border-[#DBEAFE] shadow-xs">
+        <span>Transparent Retainers</span>
+      </div>
+
+      <h1 class="headline-display text-[#0F172A] max-w-4xl mx-auto tracking-tight [text-wrap:balance]">
+        Simple retainers. Zero surprises.
+      </h1>
+
+      <p class="body-lg text-[#334155] max-w-2xl mx-auto leading-relaxed [text-wrap:balance]">
+        Choose the level of operational control your business needs.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3 Tiers Grid -->
+  <section class="py-20 md:py-28 bg-white border-b border-[#E2E8F0]">
+    <div class="container-wide">
+      <div class="grid gap-8 lg:grid-cols-3 items-stretch">
+        
+        <!-- Tier 1: Foundation -->
+        <div id="foundation" class="card-synthesia p-8 sm:p-10 flex flex-col justify-between space-y-8 scroll-mt-28">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <span class="label-sm text-[#2563EB]">Tier 01</span>
+              <h2 class="text-3xl font-bold text-[#0F172A]">Foundation</h2>
+              <p class="text-base font-semibold text-[#2563EB]">The essentials, handled.</p>
+            </div>
+            <p class="text-sm text-[#64748B] leading-relaxed">
+              Perfect for businesses needing core digital stability. Includes your choice of 2–3 desks.
+            </p>
+
+            <div class="space-y-3 pt-4 border-t border-[#E2E8F0]">
+              <span class="text-xs font-mono font-bold uppercase text-[#0F172A] block">Included:</span>
+              <ul class="space-y-2.5 text-sm text-[#334155]">
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Dedicated Ops Lead</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Live Dashboard</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Monday Briefings</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="/briefing?tier=foundation" class="button-secondary w-full text-center">
+            <span>Discuss Foundation</span>
+          </a>
+        </div>
+
+        <!-- Tier 2: Growth -->
+        <div id="growth" class="card-synthesia p-8 sm:p-10 flex flex-col justify-between space-y-8 border-2 border-[#2563EB] shadow-xl relative scroll-mt-28">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 px-4 py-1 text-white text-xs font-mono font-bold uppercase rounded-full tracking-wider shadow-md border border-white/30" style="background: linear-gradient(145deg, #38BDF8 0%, #2563EB 48%, #1E3A8A 100%);">
+            Most Popular
+          </div>
+
+          <div class="space-y-6 pt-2">
+            <div class="space-y-2">
+              <span class="label-sm text-[#2563EB]">Tier 02</span>
+              <h2 class="text-3xl font-bold text-[#0F172A]">Growth</h2>
+              <p class="text-base font-semibold text-[#2563EB]">Scaling operations.</p>
+            </div>
+            <p class="text-sm text-[#64748B] leading-relaxed">
+              For businesses actively expanding. Includes your choice of 4–5 desks.
+            </p>
+
+            <div class="space-y-3 pt-4 border-t border-[#E2E8F0]">
+              <span class="text-xs font-mono font-bold uppercase text-[#0F172A] block">Included:</span>
+              <ul class="space-y-2.5 text-sm text-[#334155]">
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Dedicated Ops Lead</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Live Dashboard</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Monday Briefings</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span class="font-semibold text-[#0F172A]">Priority Support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="/briefing?tier=growth" class="button-primary w-full text-center">
+            <span>Discuss Growth</span>
+          </a>
+        </div>
+
+        <!-- Tier 3: Command -->
+        <div id="command" class="card-synthesia p-8 sm:p-10 flex flex-col justify-between space-y-8 scroll-mt-28">
+          <div class="space-y-6">
+            <div class="space-y-2">
+              <span class="label-sm text-[#2563EB]">Tier 03</span>
+              <h2 class="text-3xl font-bold text-[#0F172A]">Command</h2>
+              <p class="text-base font-semibold text-[#2563EB]">Total operational takeover.</p>
+            </div>
+            <p class="text-sm text-[#64748B] leading-relaxed">
+              All 6 desks deployed. We become your entire digital department.
+            </p>
+
+            <div class="space-y-3 pt-4 border-t border-[#E2E8F0]">
+              <span class="text-xs font-mono font-bold uppercase text-[#0F172A] block">Included:</span>
+              <ul class="space-y-2.5 text-sm text-[#334155]">
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Dedicated Ops Lead</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Live Dashboard</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>Monday Briefings</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span>24/7 Monitoring</span>
+                </li>
+                <li class="flex items-center gap-2.5">
+                  <span class="text-emerald-500 font-bold">✓</span>
+                  <span class="font-bold text-emerald-600">90-Day Comfort Guarantee</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <a href="/briefing?tier=command" class="button-secondary w-full text-center">
+            <span>Discuss Command</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Guarantee Callout -->
+  <section id="guarantee" class="py-16 bg-[#F8FAFC] border-b border-[#E2E8F0] scroll-mt-28">
+    <div class="container-tight text-center space-y-4">
+      <h3 class="text-2xl font-bold text-[#0F172A]">The 90-Day Comfort Guarantee</h3>
+      <p class="text-base text-[#64748B] max-w-xl mx-auto leading-relaxed">
+        If you aren't completely at peace with your digital operations after 90 days, we'll offboard you smoothly and refund your last month. No friction.
+      </p>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="py-20 md:py-28 bg-[#0B0F19] text-white">
+    <div class="container-tight text-center space-y-6">
+      <p class="body-lg text-[#94A3B8] max-w-lg mx-auto leading-relaxed">
+        Every engagement begins with a briefing. No pressure. No commitment until you're certain.
+      </p>
+      <div class="pt-4">
+        <a href="/briefing" class="button-primary bg-[#2563EB] hover:bg-[#1D4ED8]">
+          <span>Schedule a Briefing</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

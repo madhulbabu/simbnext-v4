@@ -1,0 +1,270 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/lib/site-config';
+
+const whatsappMsg = encodeURIComponent(
+  "Hi SIMBNEXT, I would like to learn more about your Digital Operations Command Center and schedule an executive briefing."
+);
+---
+
+<BaseLayout
+  title="Schedule a Briefing | SIMBNEXT"
+  description="Schedule a 30-minute operational briefing to discuss your digital infrastructure, bottlenecks, and coverage across our 6 Desks."
+>
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-white text-[#0F172A] pt-36 md:pt-44 pb-16 md:pb-20 border-b border-[#E2E8F0]">
+    <div class="container-wide text-center space-y-6">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-white text-[#2563EB] border border-[#DBEAFE] shadow-xs">
+        <span class="h-2 w-2 rounded-full bg-[#10B981] animate-pulse"></span>
+        <span>Executive Briefing</span>
+      </div>
+
+      <h1 class="headline-display text-[#0F172A] max-w-3xl mx-auto tracking-tight [text-wrap:balance]">
+        Let's talk operations.
+      </h1>
+
+      <p class="body-lg text-[#334155] max-w-xl mx-auto leading-relaxed [text-wrap:balance]">
+        A focused 30-minute session to audit your bottlenecks, evaluate active desks, and review your operational architecture.
+      </p>
+    </div>
+  </section>
+
+  <!-- Form & Sidebar Grid -->
+  <section class="py-16 md:py-24 bg-white border-b border-[#E2E8F0]">
+    <div class="container-wide">
+      <div class="grid gap-12 lg:grid-cols-12 max-w-5xl mx-auto items-start">
+        
+        <!-- Left: Briefing Form -->
+        <div class="lg:col-span-7 card-synthesia p-8 sm:p-10 shadow-xl">
+          <form id="briefing-form" class="space-y-5">
+            
+            <!-- Full Name -->
+            <div class="space-y-1.5">
+              <label for="fullName" class="block text-xs font-mono font-bold uppercase text-[#0F172A]">
+                Full Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                required
+                placeholder="e.g. Rajesh Rao"
+                class="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm text-[#0F172A] outline-none transition bg-[#F8FAFC]"
+              />
+            </div>
+
+            <!-- Work Email & Phone Grid -->
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="space-y-1.5">
+                <label for="workEmail" class="block text-xs font-mono font-bold uppercase text-[#0F172A]">
+                  Work Email <span class="text-red-500">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="workEmail"
+                  name="workEmail"
+                  required
+                  placeholder="rajesh@company.com"
+                  class="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm text-[#0F172A] outline-none transition bg-[#F8FAFC]"
+                />
+              </div>
+
+              <div class="space-y-1.5">
+                <label for="phone" class="block text-xs font-mono font-bold uppercase text-[#0F172A]">
+                  Phone / WhatsApp <span class="text-red-500">*</span>
+                </label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="+91 98765 43210"
+                  class="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm text-[#0F172A] outline-none transition bg-[#F8FAFC]"
+                />
+              </div>
+            </div>
+
+            <!-- Company Name & Website -->
+            <div class="space-y-1.5">
+              <label for="company" class="block text-xs font-mono font-bold uppercase text-[#0F172A]">
+                Company Name & Website <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                required
+                placeholder="e.g. Apex Health (apexhealth.com)"
+                class="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm text-[#0F172A] outline-none transition bg-[#F8FAFC]"
+              />
+            </div>
+
+            <!-- Operational Bottlenecks -->
+            <div class="space-y-1.5">
+              <label for="bottleneck" class="block text-xs font-mono font-bold uppercase text-[#0F172A]">
+                What is your biggest digital / operational friction? <span class="text-red-500">*</span>
+              </label>
+              <textarea
+                id="bottleneck"
+                name="bottleneck"
+                rows="3"
+                required
+                placeholder="e.g. Managing 5+ vendors, slow lead follow-ups, off-brand collateral, manual CRM entry..."
+                class="w-full px-4 py-3 rounded-xl border border-[#E2E8F0] focus:border-[#2563EB] focus:ring-2 focus:ring-[#2563EB]/20 text-sm text-[#0F172A] outline-none transition bg-[#F8FAFC]"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="button-primary w-full text-center">
+              <span>Request Executive Briefing</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+              </svg>
+            </button>
+          </form>
+
+          <div id="form-success" class="hidden p-5 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-900 text-sm font-medium text-center space-y-2">
+            <div class="font-bold text-base text-emerald-800">Briefing Request Received</div>
+            <p class="text-xs text-emerald-700">
+              Our Operations Lead will review your digital footprint and reach out within 4 business hours to confirm your briefing session.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: What Happens Next & Direct Contact Sidebar -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Protocol Box -->
+          <div class="card-synthesia p-8 space-y-6 bg-[#F8FAFC]">
+            <div class="space-y-1">
+              <span class="label-sm text-[#2563EB]">Protocol</span>
+              <h2 class="text-xl font-bold text-[#0F172A]">What happens next?</h2>
+            </div>
+
+            <div class="space-y-4 text-xs">
+              <div class="flex items-start gap-3">
+                <div class="w-7 h-7 rounded-xl bg-[#EFF6FF] text-[#2563EB] flex items-center justify-center font-bold font-mono text-xs shrink-0 mt-0.5 border border-[#DBEAFE]">
+                  1
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-[#0F172A]">The Briefing (30 Mins)</h3>
+                  <p class="text-[#64748B] mt-0.5">We audit your existing vendors, tools, and recurring bottlenecks.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-7 h-7 rounded-xl bg-[#EFF6FF] text-[#2563EB] flex items-center justify-center font-bold font-mono text-xs shrink-0 mt-0.5 border border-[#DBEAFE]">
+                  2
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-[#0F172A]">The Blueprint Presentation</h3>
+                  <p class="text-[#64748B] mt-0.5">We present your active desk mapping, custom SLAs, and rollout plan.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-7 h-7 rounded-xl bg-[#EFF6FF] text-[#2563EB] flex items-center justify-center font-bold font-mono text-xs shrink-0 mt-0.5 border border-[#DBEAFE]">
+                  3
+                </div>
+                <div>
+                  <h3 class="text-sm font-bold text-[#0F172A]">90-Day Comfort Guarantee</h3>
+                  <p class="text-[#64748B] mt-0.5">100% risk-free. If operations aren't noticeably smoother, full last-month refund.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-4 border-t border-[#E2E8F0] text-xs font-mono text-[#0F172A] font-bold">
+              Zero pressure. Zero sales tactics.
+            </div>
+          </div>
+
+          <!-- Direct Line Card with Dedicated Phone & WhatsApp Actions -->
+          <div class="p-6 rounded-3xl border border-[#E2E8F0] bg-white space-y-4 shadow-xs">
+            <span class="text-xs font-mono font-bold uppercase text-[#64748B] tracking-wider block">
+              Direct Contact Lines
+            </span>
+
+            <div class="space-y-3">
+              <!-- 1. Direct Phone Dial -->
+              <a
+                href={`tel:${SITE.phone.replace(/\s+/g, '')}`}
+                class="p-3 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] hover:border-[#2563EB] hover:bg-[#EFF6FF] transition-all flex items-center justify-between group"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-xl bg-white border border-[#E2E8F0] group-hover:border-[#2563EB] flex items-center justify-center text-[#2563EB] shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-xs text-[#64748B] font-mono">Direct Phone Call</div>
+                    <div class="text-sm font-bold font-mono text-[#0F172A] group-hover:text-[#2563EB]">{SITE.phone}</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-[#2563EB] font-bold">Call →</span>
+              </a>
+
+              <!-- 2. Direct WhatsApp -->
+              <a
+                href={`https://wa.me/${SITE.phoneRaw}?text=${whatsappMsg}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="p-3 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] hover:border-emerald-500 hover:bg-emerald-50/50 transition-all flex items-center justify-between group"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-xl bg-white border border-[#E2E8F0] group-hover:border-emerald-500 flex items-center justify-center text-emerald-600 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.472 14.382c-.301-.15-1.782-.879-2.058-.98-.276-.1-.477-.15-.678.15-.201.3-.778.98-.954 1.18-.175.2-.351.226-.652.075s-1.272-.469-2.423-1.496c-.896-.799-1.501-1.786-1.677-2.087-.175-.3-.019-.463.132-.613.136-.134.301-.351.451-.527.151-.175.201-.3.301-.501.101-.2.05-.376-.025-.526-.075-.15-.678-1.634-.929-2.238-.244-.588-.492-.508-.678-.518-.175-.009-.376-.011-.577-.011s-.527.075-.803.376c-.276.3-1.054 1.03-1.054 2.511 0 1.482 1.079 2.911 1.23 3.112.151.2 2.124 3.243 5.145 4.549.718.311 1.279.497 1.716.636.721.23 1.377.197 1.896.12.577-.087 1.782-.728 2.033-1.431.251-.703.251-1.305.175-1.431-.075-.126-.276-.201-.577-.351zM12.042 21.684c-1.74 0-3.447-.464-4.945-1.344l-.354-.21-3.676.964.981-3.582-.23-.367a9.66 9.66 0 0 1-1.48-5.184c0-5.348 4.351-9.7 9.704-9.7 2.59 0 5.025 1.009 6.855 2.84 1.83 1.831 2.838 4.267 2.838 6.857 0 5.349-4.351 9.702-9.693 9.716zM12.042 0C5.397 0 0 5.397 0 12.042c0 2.12.553 4.19 1.603 6.009L0 24l6.108-1.602a12.01 12.01 0 0 0 5.934 1.564h.005c6.643 0 12.04-5.399 12.04-12.043 0-3.218-1.253-6.243-3.528-8.518C18.283 1.254 15.259 0 12.042 0z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-xs text-[#64748B] font-mono">WhatsApp Live Triage</div>
+                    <div class="text-sm font-bold text-[#0F172A] group-hover:text-emerald-700">Chat Instantly</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-emerald-600 font-bold">Chat →</span>
+              </a>
+
+              <!-- 3. Direct Email -->
+              <a
+                href={`mailto:${SITE.email}`}
+                class="p-3 rounded-2xl bg-[#F8FAFC] border border-[#E2E8F0] hover:border-[#2563EB] hover:bg-[#EFF6FF] transition-all flex items-center justify-between group"
+              >
+                <div class="flex items-center gap-3">
+                  <div class="w-8 h-8 rounded-xl bg-white border border-[#E2E8F0] group-hover:border-[#2563EB] flex items-center justify-center text-[#2563EB] shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="text-xs text-[#64748B] font-mono">Direct Email</div>
+                    <div class="text-sm font-bold text-[#0F172A] group-hover:text-[#2563EB]">{SITE.email}</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono text-[#2563EB] font-bold">Mail →</span>
+              </a>
+            </div>
+
+            <div class="pt-2 text-center text-xs text-[#64748B] font-mono">
+              📍 {SITE.location}
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const form = document.getElementById('briefing-form');
+  const successBox = document.getElementById('form-success');
+  if (form && successBox) {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      form.classList.add('hidden');
+      successBox.classList.remove('hidden');
+    });
+  }
+</script>

@@ -1,0 +1,17 @@
+# SIMBNEXT
+
+> Your Digital Operations. Handled.
+
+SIMBNEXT acts as a single digital operations command center for established businesses. We replace fragmented freelancers and traditional marketing agencies with 6 dedicated monthly Desks (Brand, Presence, Growth, Systems, Build, and AI & Intelligence) directed by one dedicated Operations Lead and backed by our 90-Day Comfort Guarantee.
+
+## Core Desks & Documentation
+
+- [Command Center (The 6 Desks)](https://www.simbnext.com/#desks): Overview of Brand, Presence, Growth, Systems, Build, and AI & Intelligence Desks.
+- [Operating Method](https://www.simbnext.com/how-we-work): 4-stage rollout (The Briefing, The Blueprint, The Sprint, The Command Center) and weekly Monday briefings.
+- [Philosophy & Leadership](https://www.simbnext.com/about): Two decades of corporate systems execution and operational peace of mind.
+- [Pricing & Coverage Retainers](https://www.simbnext.com/pricing): Foundation, Growth, and Command retainers backed by the 90-Day Comfort Guarantee.
+- [Schedule a Briefing](https://www.simbnext.com/briefing): Request a 30-minute operational audit.
+
+## Optional
+
+- [Full LLM Documentation](https://www.simbnext.com/llms-full.txt): Complete detailed specifications and desk deliverables.

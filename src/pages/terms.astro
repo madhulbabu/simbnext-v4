@@ -1,0 +1,46 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { SITE } from '@/lib/site-config';
+---
+
+<BaseLayout
+  title="Terms of Service | SIMBNEXT"
+  description="Terms of service governing SIMBNEXT digital operations command center retainers and SLAs."
+>
+  <!-- Light Header Section -->
+  <div class="pt-36 pb-16 bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
+    <div class="container-wide max-w-3xl space-y-3">
+      <span class="chip-synthesia">Governance & Compliance</span>
+      <h1 class="headline-lg text-[#0F172A]">Terms of Service</h1>
+      <p class="text-xs text-[#64748B] font-mono">Last updated: 2026</p>
+    </div>
+  </div>
+
+  <div class="py-16 bg-[#FFFFFF]">
+    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-6 text-[#334155]">
+      <p>
+        These Terms of Service govern your engagement with {SITE.legalName} ("SIMBNEXT") for digital operations command center retainers, software management, and automation services.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">1. Scope of Engagement</h2>
+      <p>
+        Services are structured through modular coverage across our 6 Desks (Brand Desk, Presence Desk, Growth Desk, Systems Desk, Build Desk, and AI & Intelligence Desk) operating under agreed monthly Service Level Agreements (SLAs).
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">2. Retainers & Coverage</h2>
+      <p>
+        Engagements operate on predictable monthly retainers billed at the start of each service cycle. There are no hidden hourly markups or surprise task surcharges.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">3. Intellectual Property Ownership</h2>
+      <p>
+        Upon payment, all custom creative assets, website code, portal software, workflows, and brand guidelines created specifically for your business belong 100% to you.
+      </p>
+
+      <h2 class="text-lg font-bold text-[#0F172A] mt-6">4. Cancellation & Notice</h2>
+      <p>
+        Following any initial sprint or guarantee period, partnerships operate month-to-month and may be cancelled with a simple 30-day written notice.
+      </p>
+    </div>
+  </div>
+</BaseLayout>

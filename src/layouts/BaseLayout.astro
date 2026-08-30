@@ -1,0 +1,33 @@
+---
+import SEO from '@/components/layout/SEO.astro';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+import FloatingContact from '@/components/layout/FloatingContact.astro';
+import { ClientRouter } from 'astro:transitions';
+import '@/styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  darkHeader?: boolean;
+}
+
+const { title, description, image, darkHeader = false } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <SEO title={title} description={description} image={image} />
+    <ClientRouter />
+  </head>
+  <body class="min-h-screen flex flex-col bg-white text-[#0F172A] relative">
+    <Header dark={darkHeader} transition:persist="header" />
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+    <FloatingContact transition:persist="floating-contact" />
+  </body>
+</html>

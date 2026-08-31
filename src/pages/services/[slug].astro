@@ -17,7 +17,7 @@ const { desk } = Astro.props;
   description={desk.description}
 >
   <!-- Light Header Section -->
-  <div class="pt-36 pb-20 bg-gradient-to-b from-[#EFF6FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
+  <div class="pt-36 pb-20 bg-gradient-to-b from-[#EEF2FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
     <div class="container-wide">
       <div class="max-w-3xl space-y-4">
         <div class="flex items-center gap-3">
@@ -54,7 +54,7 @@ const { desk } = Astro.props;
         <!-- Left Column: Deliverables & Outcomes -->
         <div class="space-y-10">
           <!-- SLA Guarantee Box (Ice Blue Tint) -->
-          <div class="rounded-2xl bg-[#EFF6FF] p-6 border border-[#DBEAFE]">
+          <div class="rounded-2xl bg-[#EEF2FF] p-6 border border-[#E0E7FF]">
             <div class="flex items-center gap-2 text-xs font-mono font-bold text-[#1B17FF] uppercase tracking-wider mb-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
@@ -110,7 +110,7 @@ const { desk } = Astro.props;
                   class:list={[
                     "p-3 rounded-xl flex items-center justify-between text-xs font-semibold transition-colors",
                     d.slug === desk.slug
-                      ? "bg-[#EFF6FF] text-[#1B17FF] border border-[#DBEAFE]"
+                      ? "bg-[#EEF2FF] text-[#1B17FF] border border-[#E0E7FF]"
                       : "text-[#334155] hover:bg-[#F8FAFC]"
                   ]}
                 >
@@ -121,7 +121,7 @@ const { desk } = Astro.props;
             </div>
           </div>
 
-          <div class="rounded-3xl bg-[#EFF6FF] border border-[#DBEAFE] p-6 space-y-4">
+          <div class="rounded-3xl bg-[#EEF2FF] border border-[#E0E7FF] p-6 space-y-4">
             <h4 class="text-base font-bold text-[#0F172A]">Ready to activate {desk.name}?</h4>
             <p class="text-xs text-[#334155] leading-relaxed">
               Schedule an executive briefing. We will analyze your operations and provide a tailored SLA proposal.

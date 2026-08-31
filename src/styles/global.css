@@ -46,8 +46,9 @@
     --color-primary: #1B17FF; /* Electric Royal Cobalt Blue */
     --color-primary-hover: #120ECF; /* Deep Royal Blue */
     --color-accent: #1B17FF;
-    --color-secondary: #EFF6FF; /* Soft Ice Blue Tint */
+    --color-secondary: #EEF2FF; /* Soft Ultramarine Ice Tint */
     --color-border: #E2E8F0; /* Technical Slate Border */
+    --color-border-accent: #E0E7FF; /* Soft Ultramarine Border */
     --color-muted: #F8FAFC; /* Technical Canvas */
     --color-muted-text: #64748B; /* Cool Slate */
     --color-dark-bg: #0B0F19; /* Deep Midnight Slate Noir */
@@ -169,9 +170,9 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    background-color: #EFF6FF;
+    background-color: #EEF2FF;
     color: #1B17FF;
-    border: 1px solid #DBEAFE;
+    border: 1px solid #E0E7FF;
   }
 
   .chip-dark {
@@ -255,8 +256,8 @@
   }
 
   .button-secondary:hover {
-    background-color: #EFF6FF;
-    border-color: #DBEAFE;
+    background-color: #EEF2FF;
+    border-color: #E0E7FF;
     color: #1B17FF;
     transform: translateY(-1px);
   }
@@ -279,7 +280,7 @@
   }
 
   .btn-white-pill:hover {
-    background-color: #EFF6FF;
+    background-color: #EEF2FF;
     color: #1B17FF;
     transform: translateY(-1px);
   }

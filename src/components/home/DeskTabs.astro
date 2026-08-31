@@ -28,7 +28,7 @@ import { DESKS } from '@/lib/content';
             "desk-tab-btn py-3 px-3.5 rounded-xl text-left transition-all duration-200 cursor-pointer flex flex-col justify-between border",
             idx === 0
               ? "bg-white text-[#0F172A] shadow-md border-[#E2E8F0] ring-2 ring-[#1B17FF]"
-              : "text-[#334155] border-transparent hover:text-[#1B17FF] hover:bg-[#EFF6FF] hover:border-[#DBEAFE]"
+              : "text-[#334155] border-transparent hover:text-[#1B17FF] hover:bg-[#EEF2FF] hover:border-[#E0E7FF]"
           ]}
         >
           <div class="flex items-center justify-between mb-2">
@@ -76,7 +76,7 @@ import { DESKS } from '@/lib/content';
               </p>
 
               <!-- SLA Guarantee Box (Ice Blue Tint) -->
-              <div class="mt-7 rounded-2xl bg-[#EFF6FF] p-5 border border-[#DBEAFE]">
+              <div class="mt-7 rounded-2xl bg-[#EEF2FF] p-5 border border-[#E0E7FF]">
                 <div class="flex items-center gap-2 text-xs font-mono font-bold text-[#1B17FF] uppercase tracking-wider mb-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
@@ -164,14 +164,14 @@ import { DESKS } from '@/lib/content';
 
         tabButtons.forEach((btn) => {
           btn.classList.remove('bg-white', 'text-[#0F172A]', 'shadow-md', 'border-[#E2E8F0]', 'ring-2', 'ring-[#1B17FF]');
-          btn.classList.add('text-[#334155]', 'border-transparent', 'hover:text-[#1B17FF]', 'hover:bg-[#EFF6FF]', 'hover:border-[#DBEAFE]');
+          btn.classList.add('text-[#334155]', 'border-transparent', 'hover:text-[#1B17FF]', 'hover:bg-[#EEF2FF]', 'hover:border-[#E0E7FF]');
           const indicator = btn.querySelector('.desk-indicator');
           indicator?.classList.remove('bg-[#1B17FF]');
           indicator?.classList.add('bg-transparent');
         });
 
         button.classList.add('bg-white', 'text-[#0F172A]', 'shadow-md', 'border-[#E2E8F0]', 'ring-2', 'ring-[#1B17FF]');
-        button.classList.remove('text-[#334155]', 'border-transparent', 'hover:text-[#1B17FF]', 'hover:bg-[#EFF6FF]', 'hover:border-[#DBEAFE]');
+        button.classList.remove('text-[#334155]', 'border-transparent', 'hover:text-[#1B17FF]', 'hover:bg-[#EEF2FF]', 'hover:border-[#E0E7FF]');
         const activeIndicator = button.querySelector('.desk-indicator');
         activeIndicator?.classList.add('bg-[#1B17FF]');
         activeIndicator?.classList.remove('bg-transparent');

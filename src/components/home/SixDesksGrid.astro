@@ -92,7 +92,7 @@ const DESKS: Desk[] = [
   {DESKS.map((desk) => (
     <div class="desk-sculpted-card group relative w-full select-none">
       
-      <div class="absolute top-0 left-0 w-[68px] h-[68px] sm:w-[78px] sm:h-[78px] rounded-2xl bg-gradient-to-br from-[#38BDF8] via-[#2563EB] to-[#1D4ED8] flex items-center justify-center p-3 shadow-md shadow-blue-500/15 z-20 group-hover:scale-105 transition-all duration-300">
+      <div class="absolute top-0 left-0 w-[68px] h-[68px] sm:w-[78px] sm:h-[78px] rounded-2xl bg-gradient-to-br from-[#38BDF8] via-[#1B17FF] to-[#120ECF] flex items-center justify-center p-3 shadow-md shadow-blue-500/15 z-20 group-hover:scale-105 transition-all duration-300">
         <Fragment set:html={desk.svgIcon} />
       </div>
 
@@ -101,13 +101,13 @@ const DESKS: Desk[] = [
         <svg
           viewBox="0 0 430 285"
           preserveAspectRatio="none"
-          class="absolute inset-0 w-full h-full drop-shadow-[0_10px_25px_rgba(37,99,235,0.15)] group-hover:drop-shadow-[0_16px_35px_rgba(37,99,235,0.25)] transition-all duration-300"
+          class="absolute inset-0 w-full h-full drop-shadow-[0_10px_25px_rgba(27,23,255,0.15)] group-hover:drop-shadow-[0_16px_35px_rgba(27,23,255,0.25)] transition-all duration-300"
         >
           <defs>
             <linearGradient id={`blue-grad-${desk.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stop-color="#38BDF8" />
-              <stop offset="50%" stop-color="#2563EB" />
-              <stop offset="100%" stop-color="#1D4ED8" />
+              <stop offset="50%" stop-color="#1B17FF" />
+              <stop offset="100%" stop-color="#120ECF" />
             </linearGradient>
           </defs>
 
@@ -144,7 +144,7 @@ const DESKS: Desk[] = [
                 class="inline-flex items-center gap-1.5 text-[11px] sm:text-xs font-bold uppercase tracking-wider text-white hover:text-sky-200 transition group/btn"
               >
                 <span>LEARN MORE</span>
-                <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white text-[#2563EB] flex items-center justify-center shadow-xs group-hover/btn:scale-110 transition-transform">
+                <span class="w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-white text-[#1B17FF] flex items-center justify-center shadow-xs group-hover/btn:scale-110 transition-transform">
                   <svg xmlns="http://www.w3.org/2000/svg" class="w-2.5 h-2.5 sm:w-3 sm:h-3 stroke-[3]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
                     <path d="M9 18l6-6-6-6"/>
                   </svg>

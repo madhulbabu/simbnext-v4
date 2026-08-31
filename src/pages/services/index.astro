@@ -26,7 +26,7 @@ import { DESKS } from '@/lib/content';
           <div class="card-synthesia p-8 flex flex-col justify-between hover:scale-[1.01] transition-transform">
             <div>
               <div class="flex items-center justify-between mb-4">
-                <span class="text-xs font-mono font-bold text-[#2563EB]">DESK {desk.index}</span>
+                <span class="text-xs font-mono font-bold text-[#1B17FF]">DESK {desk.index}</span>
                 <span class="chip-synthesia">{desk.category}</span>
               </div>
 
@@ -34,7 +34,7 @@ import { DESKS } from '@/lib/content';
                 {desk.name}
               </h2>
 
-              <p class="mt-2 text-xs font-semibold text-[#2563EB]">
+              <p class="mt-2 text-xs font-semibold text-[#1B17FF]">
                 {desk.tagline}
               </p>
 
@@ -47,7 +47,7 @@ import { DESKS } from '@/lib/content';
                 <ul class="space-y-1.5 text-xs text-[#0F172A]">
                   {desk.deliverables.map((d) => (
                     <li class="flex items-start gap-2">
-                      <span class="text-[#2563EB] font-bold">✓</span>
+                      <span class="text-[#1B17FF] font-bold">✓</span>
                       <span>{d}</span>
                     </li>
                   ))}

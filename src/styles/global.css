@@ -43,9 +43,9 @@
     --color-foreground: #0F172A; /* Midnight Slate */
     --color-card: #FFFFFF;
     --color-card-foreground: #334155; /* Slate */
-    --color-primary: #2563EB; /* Electric Royal Blue */
-    --color-primary-hover: #1D4ED8; /* Deep Cobalt Blue */
-    --color-accent: #2563EB;
+    --color-primary: #1B17FF; /* Electric Royal Cobalt Blue */
+    --color-primary-hover: #120ECF; /* Deep Royal Blue */
+    --color-accent: #1B17FF;
     --color-secondary: #EFF6FF; /* Soft Ice Blue Tint */
     --color-border: #E2E8F0; /* Technical Slate Border */
     --color-muted: #F8FAFC; /* Technical Canvas */
@@ -170,7 +170,7 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     background-color: #EFF6FF;
-    color: #2563EB;
+    color: #1B17FF;
     border: 1px solid #DBEAFE;
   }
 
@@ -202,8 +202,8 @@
   }
 
   .card-synthesia:hover {
-    box-shadow: 0 12px 36px rgba(37, 99, 235, 0.08);
-    border-color: rgba(37, 99, 235, 0.35);
+    box-shadow: 0 12px 36px rgba(27, 23, 255, 0.08);
+    border-color: rgba(27, 23, 255, 0.35);
   }
 
   /* Buttons */
@@ -257,7 +257,7 @@
   .button-secondary:hover {
     background-color: #EFF6FF;
     border-color: #DBEAFE;
-    color: #2563EB;
+    color: #1B17FF;
     transform: translateY(-1px);
   }
 
@@ -280,7 +280,7 @@
 
   .btn-white-pill:hover {
     background-color: #EFF6FF;
-    color: #2563EB;
+    color: #1B17FF;
     transform: translateY(-1px);
   }
 

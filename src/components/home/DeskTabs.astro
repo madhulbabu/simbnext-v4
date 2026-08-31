@@ -27,15 +27,15 @@ import { DESKS } from '@/lib/content';
           class:list={[
             "desk-tab-btn py-3 px-3.5 rounded-xl text-left transition-all duration-200 cursor-pointer flex flex-col justify-between border",
             idx === 0
-              ? "bg-white text-[#0F172A] shadow-md border-[#E2E8F0] ring-2 ring-[#2563EB]"
-              : "text-[#334155] border-transparent hover:text-[#2563EB] hover:bg-[#EFF6FF] hover:border-[#DBEAFE]"
+              ? "bg-white text-[#0F172A] shadow-md border-[#E2E8F0] ring-2 ring-[#1B17FF]"
+              : "text-[#334155] border-transparent hover:text-[#1B17FF] hover:bg-[#EFF6FF] hover:border-[#DBEAFE]"
           ]}
         >
           <div class="flex items-center justify-between mb-2">
-            <span class="text-xs font-mono font-bold text-[#2563EB]">{desk.index}</span>
+            <span class="text-xs font-mono font-bold text-[#1B17FF]">{desk.index}</span>
             <span class:list={[
               "desk-indicator h-2 w-2 rounded-full",
-              idx === 0 ? "bg-[#2563EB]" : "bg-transparent"
+              idx === 0 ? "bg-[#1B17FF]" : "bg-transparent"
             ]}></span>
           </div>
           <div class="text-sm font-bold truncate">{desk.name}</div>
@@ -67,7 +67,7 @@ import { DESKS } from '@/lib/content';
                 {desk.name}
               </h3>
               
-              <p class="mt-2 text-base font-medium text-[#2563EB]">
+              <p class="mt-2 text-base font-medium text-[#1B17FF]">
                 {desk.tagline}
               </p>
 
@@ -77,7 +77,7 @@ import { DESKS } from '@/lib/content';
 
               <!-- SLA Guarantee Box (Ice Blue Tint) -->
               <div class="mt-7 rounded-2xl bg-[#EFF6FF] p-5 border border-[#DBEAFE]">
-                <div class="flex items-center gap-2 text-xs font-mono font-bold text-[#2563EB] uppercase tracking-wider mb-1.5">
+                <div class="flex items-center gap-2 text-xs font-mono font-bold text-[#1B17FF] uppercase tracking-wider mb-1.5">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
                   </svg>
@@ -92,7 +92,7 @@ import { DESKS } from '@/lib/content';
               <div class="mt-6 pt-4 border-t border-[#E2E8F0]">
                 <a
                   href={`/services/${desk.slug}`}
-                  class="inline-flex items-center gap-2 text-sm font-bold text-[#2563EB] hover:underline group"
+                  class="inline-flex items-center gap-2 text-sm font-bold text-[#1B17FF] hover:underline group"
                 >
                   <span>View full {desk.name} scope & specifications</span>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover:translate-x-1">
@@ -112,7 +112,7 @@ import { DESKS } from '@/lib/content';
                 <ul class="grid gap-2.5">
                   {desk.deliverables.map((item) => (
                     <li class="flex items-start gap-2.5 text-sm text-[#334155] bg-[#F8FAFC] p-3 rounded-xl border border-[#E2E8F0]">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#2563EB] mt-0.5 shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-[#1B17FF] mt-0.5 shrink-0">
                         <polyline points="20 6 9 17 4 12"/>
                       </svg>
                       <span>{item}</span>
@@ -163,17 +163,17 @@ import { DESKS } from '@/lib/content';
         const targetId = button.getAttribute('data-desk-target');
 
         tabButtons.forEach((btn) => {
-          btn.classList.remove('bg-white', 'text-[#0F172A]', 'shadow-md', 'border-[#E2E8F0]', 'ring-2', 'ring-[#2563EB]');
-          btn.classList.add('text-[#334155]', 'border-transparent', 'hover:text-[#2563EB]', 'hover:bg-[#EFF6FF]', 'hover:border-[#DBEAFE]');
+          btn.classList.remove('bg-white', 'text-[#0F172A]', 'shadow-md', 'border-[#E2E8F0]', 'ring-2', 'ring-[#1B17FF]');
+          btn.classList.add('text-[#334155]', 'border-transparent', 'hover:text-[#1B17FF]', 'hover:bg-[#EFF6FF]', 'hover:border-[#DBEAFE]');
           const indicator = btn.querySelector('.desk-indicator');
-          indicator?.classList.remove('bg-[#2563EB]');
+          indicator?.classList.remove('bg-[#1B17FF]');
           indicator?.classList.add('bg-transparent');
         });
 
-        button.classList.add('bg-white', 'text-[#0F172A]', 'shadow-md', 'border-[#E2E8F0]', 'ring-2', 'ring-[#2563EB]');
-        button.classList.remove('text-[#334155]', 'border-transparent', 'hover:text-[#2563EB]', 'hover:bg-[#EFF6FF]', 'hover:border-[#DBEAFE]');
+        button.classList.add('bg-white', 'text-[#0F172A]', 'shadow-md', 'border-[#E2E8F0]', 'ring-2', 'ring-[#1B17FF]');
+        button.classList.remove('text-[#334155]', 'border-transparent', 'hover:text-[#1B17FF]', 'hover:bg-[#EFF6FF]', 'hover:border-[#DBEAFE]');
         const activeIndicator = button.querySelector('.desk-indicator');
-        activeIndicator?.classList.add('bg-[#2563EB]');
+        activeIndicator?.classList.add('bg-[#1B17FF]');
         activeIndicator?.classList.remove('bg-transparent');
 
         panes.forEach((pane) => {

@@ -27,7 +27,7 @@ const { desk } = Astro.props;
         <h1 class="headline-lg text-[#0F172A] [text-wrap:balance]">
           {desk.name}
         </h1>
-        <p class="text-lg text-[#2563EB] font-semibold">
+        <p class="text-lg text-[#1B17FF] font-semibold">
           {desk.tagline}
         </p>
         <p class="body-md text-[#334155] leading-relaxed [text-wrap:balance]">
@@ -55,7 +55,7 @@ const { desk } = Astro.props;
         <div class="space-y-10">
           <!-- SLA Guarantee Box (Ice Blue Tint) -->
           <div class="rounded-2xl bg-[#EFF6FF] p-6 border border-[#DBEAFE]">
-            <div class="flex items-center gap-2 text-xs font-mono font-bold text-[#2563EB] uppercase tracking-wider mb-2">
+            <div class="flex items-center gap-2 text-xs font-mono font-bold text-[#1B17FF] uppercase tracking-wider mb-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
               </svg>
@@ -74,7 +74,7 @@ const { desk } = Astro.props;
             <div class="grid gap-3">
               {desk.deliverables.map((item) => (
                 <div class="p-5 rounded-2xl border border-[#E2E8F0] bg-[#F8FAFC] flex items-start gap-3">
-                  <span class="h-2 w-2 rounded-full bg-[#2563EB] mt-2 shrink-0"></span>
+                  <span class="h-2 w-2 rounded-full bg-[#1B17FF] mt-2 shrink-0"></span>
                   <span class="text-sm font-medium text-[#0F172A]">{item}</span>
                 </div>
               ))}
@@ -89,7 +89,7 @@ const { desk } = Astro.props;
             <div class="p-6 rounded-2xl border border-[#E2E8F0] bg-white space-y-3 shadow-xs">
               {desk.outcomes.map((outcome) => (
                 <div class="flex items-start gap-3 text-sm text-[#334155]">
-                  <span class="text-[#2563EB] font-bold">✓</span>
+                  <span class="text-[#1B17FF] font-bold">✓</span>
                   <span>{outcome}</span>
                 </div>
               ))}
@@ -110,7 +110,7 @@ const { desk } = Astro.props;
                   class:list={[
                     "p-3 rounded-xl flex items-center justify-between text-xs font-semibold transition-colors",
                     d.slug === desk.slug
-                      ? "bg-[#EFF6FF] text-[#2563EB] border border-[#DBEAFE]"
+                      ? "bg-[#EFF6FF] text-[#1B17FF] border border-[#DBEAFE]"
                       : "text-[#334155] hover:bg-[#F8FAFC]"
                   ]}
                 >

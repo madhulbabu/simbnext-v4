@@ -1,6 +1,6 @@
 export const SITE = {
   name: 'SIMBNEXT',
-  legalName: 'SIMBNEXT Technologies',
+  legalName: 'Simb Technologies',
   tagline: 'Your Digital Operations. Handled.',
   ogTitle: 'SIMBNEXT | Your Digital Operations. Handled.',
   description:

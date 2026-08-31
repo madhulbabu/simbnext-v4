@@ -15,7 +15,7 @@
     </radialGradient>
 
     <radialGradient id="secondaryGlow" cx="82%" cy="75%" r="50%">
-      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#818CF8" stop-opacity="0.2"/>
       <stop offset="70%" stop-color="#1B17FF" stop-opacity="0.05"/>
       <stop offset="100%" stop-color="#1B17FF" stop-opacity="0"/>
     </radialGradient>
@@ -152,7 +152,7 @@
 
     <!-- Main Headline -->
     <text x="0" y="90" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="54" letter-spacing="-1.5px">
-      Your Digital Operations. <tspan fill="#38BDF8">Handled.</tspan>
+      Your Digital Operations. <tspan fill="#818CF8">Handled.</tspan>
     </text>
 
     <!-- Subheadline -->
@@ -218,7 +218,7 @@
 
   <!-- 4. Footer Metadata -->
   <g transform="translate(80, 560)">
-    <text x="0" y="0" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" font-mono="true">
+    <text x="0" y="0" fill="#818CF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="14" font-mono="true">
       www.simbnext.com <tspan fill="#64748B" font-weight="500">· Hyderabad · Global Delivery</tspan>
     </text>
     <text x="1040" y="0" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="13" font-mono="true" text-anchor="end">

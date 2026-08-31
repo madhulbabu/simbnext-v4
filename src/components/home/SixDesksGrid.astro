@@ -92,7 +92,7 @@ const DESKS: Desk[] = [
   {DESKS.map((desk) => (
     <div class="desk-sculpted-card group relative w-full select-none">
       
-      <div class="absolute top-0 left-0 w-[68px] h-[68px] sm:w-[78px] sm:h-[78px] rounded-2xl bg-gradient-to-br from-[#38BDF8] via-[#1B17FF] to-[#120ECF] flex items-center justify-center p-3 shadow-md shadow-blue-500/15 z-20 group-hover:scale-105 transition-all duration-300">
+      <div class="absolute top-0 left-0 w-[68px] h-[68px] sm:w-[78px] sm:h-[78px] rounded-2xl bg-gradient-to-br from-[#1B17FF] to-[#120ECF] flex items-center justify-center p-3 shadow-md shadow-blue-500/15 z-20 group-hover:scale-105 transition-all duration-300">
         <Fragment set:html={desk.svgIcon} />
       </div>
 
@@ -105,8 +105,7 @@ const DESKS: Desk[] = [
         >
           <defs>
             <linearGradient id={`blue-grad-${desk.id}`} x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#38BDF8" />
-              <stop offset="50%" stop-color="#1B17FF" />
+              <stop offset="0%" stop-color="#1B17FF" />
               <stop offset="100%" stop-color="#120ECF" />
             </linearGradient>
           </defs>

@@ -14,7 +14,7 @@ const whatsappMsg = encodeURIComponent(
   <!-- Light Header Section -->
   <div class="pt-36 pb-20 bg-gradient-to-b from-[#EEF2FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
     <div class="container-wide max-w-3xl space-y-4 text-center mx-auto">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-white text-[#1B17FF] border border-[#E0E7FF] shadow-xs">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-sans font-bold uppercase tracking-wider bg-white text-[#1B17FF] border border-[#E0E7FF] shadow-xs">
         <span class="h-2 w-2 rounded-full bg-[#10B981] animate-pulse"></span>
         <span>Direct Partnership</span>
       </div>
@@ -45,7 +45,7 @@ const whatsappMsg = encodeURIComponent(
           <form id="audit-form" class="space-y-4">
             <div class="grid gap-4 sm:grid-cols-2">
               <div>
-                <label for="name" class="block text-xs font-mono font-bold uppercase text-[#0F172A] mb-1.5">
+                <label for="name" class="block text-xs font-sans font-bold uppercase text-[#0F172A] mb-1.5">
                   Your Full Name *
                 </label>
                 <input
@@ -59,7 +59,7 @@ const whatsappMsg = encodeURIComponent(
               </div>
 
               <div>
-                <label for="phone" class="block text-xs font-mono font-bold uppercase text-[#0F172A] mb-1.5">
+                <label for="phone" class="block text-xs font-sans font-bold uppercase text-[#0F172A] mb-1.5">
                   Phone / WhatsApp *
                 </label>
                 <input
@@ -74,7 +74,7 @@ const whatsappMsg = encodeURIComponent(
             </div>
 
             <div>
-              <label for="email" class="block text-xs font-mono font-bold uppercase text-[#0F172A] mb-1.5">
+              <label for="email" class="block text-xs font-sans font-bold uppercase text-[#0F172A] mb-1.5">
                 Work Email Address *
               </label>
               <input
@@ -88,7 +88,7 @@ const whatsappMsg = encodeURIComponent(
             </div>
 
             <div>
-              <label for="company" class="block text-xs font-mono font-bold uppercase text-[#0F172A] mb-1.5">
+              <label for="company" class="block text-xs font-sans font-bold uppercase text-[#0F172A] mb-1.5">
                 Company Name & Website *
               </label>
               <input
@@ -102,7 +102,7 @@ const whatsappMsg = encodeURIComponent(
             </div>
 
             <div>
-              <label for="bottleneck" class="block text-xs font-mono font-bold uppercase text-[#0F172A] mb-1.5">
+              <label for="bottleneck" class="block text-xs font-sans font-bold uppercase text-[#0F172A] mb-1.5">
                 What is your biggest operational bottleneck? *
               </label>
               <textarea
@@ -134,21 +134,21 @@ const whatsappMsg = encodeURIComponent(
             <span class="chip-synthesia">What Happens Next?</span>
             <div class="space-y-4 text-xs">
               <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#1B17FF] text-white flex items-center justify-center font-mono font-bold shrink-0">1</span>
+                <span class="w-6 h-6 rounded-full bg-[#1B17FF] text-white flex items-center justify-center font-sans font-bold shrink-0">1</span>
                 <div>
                   <div class="font-bold text-[#0F172A]">The Briefing (30 Mins)</div>
                   <div class="text-[#64748B] mt-0.5">We audit your existing vendors, tools, and recurring bottlenecks.</div>
                 </div>
               </div>
               <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#1B17FF] text-white flex items-center justify-center font-mono font-bold shrink-0">2</span>
+                <span class="w-6 h-6 rounded-full bg-[#1B17FF] text-white flex items-center justify-center font-sans font-bold shrink-0">2</span>
                 <div>
                   <div class="font-bold text-[#0F172A]">The Blueprint Presentation</div>
                   <div class="text-[#64748B] mt-0.5">We present your active desk mapping, custom SLAs, and rollout plan.</div>
                 </div>
               </div>
               <div class="flex items-start gap-3">
-                <span class="w-6 h-6 rounded-full bg-[#1B17FF] text-white flex items-center justify-center font-mono font-bold shrink-0">3</span>
+                <span class="w-6 h-6 rounded-full bg-[#1B17FF] text-white flex items-center justify-center font-sans font-bold shrink-0">3</span>
                 <div>
                   <div class="font-bold text-[#0F172A]">90-Day Comfort Guarantee</div>
                   <div class="text-[#64748B] mt-0.5">100% risk-free. If operations aren't noticeably smoother, full last-month refund.</div>
@@ -159,7 +159,7 @@ const whatsappMsg = encodeURIComponent(
 
           <!-- Direct Line Card with Phone & WhatsApp -->
           <div class="p-6 rounded-3xl bg-[#F8FAFC] border border-[#E2E8F0] space-y-3 text-xs">
-            <span class="text-xs font-mono font-bold uppercase text-[#64748B] tracking-wider block">
+            <span class="text-xs font-sans font-bold uppercase text-[#64748B] tracking-wider block">
               Direct Contact
             </span>
 
@@ -176,11 +176,11 @@ const whatsappMsg = encodeURIComponent(
                     </svg>
                   </div>
                   <div>
-                    <div class="text-[11px] text-[#64748B] font-mono">Direct Phone Call</div>
-                    <div class="text-xs font-bold font-mono text-[#0F172A] group-hover:text-[#1B17FF]">{SITE.phone}</div>
+                    <div class="text-[11px] text-[#64748B] font-sans">Direct Phone Call</div>
+                    <div class="text-xs font-bold font-sans text-[#0F172A] group-hover:text-[#1B17FF]">{SITE.phone}</div>
                   </div>
                 </div>
-                <span class="text-xs font-mono text-[#1B17FF] font-bold">Call →</span>
+                <span class="text-xs font-sans text-[#1B17FF] font-bold">Call →</span>
               </a>
 
               <!-- 2. Direct WhatsApp -->
@@ -197,18 +197,18 @@ const whatsappMsg = encodeURIComponent(
                     </svg>
                   </div>
                   <div>
-                    <div class="text-[11px] text-[#64748B] font-mono">WhatsApp Live Triage</div>
+                    <div class="text-[11px] text-[#64748B] font-sans">WhatsApp Live Triage</div>
                     <div class="text-xs font-bold text-[#0F172A] group-hover:text-emerald-700">Chat Instantly</div>
                   </div>
                 </div>
-                <span class="text-xs font-mono text-emerald-600 font-bold">Chat →</span>
+                <span class="text-xs font-sans text-emerald-600 font-bold">Chat →</span>
               </a>
             </div>
           </div>
 
           <!-- 3. Registered Office Card -->
           <div class="p-6 rounded-3xl bg-[#FFFFFF] border border-[#E2E8F0] space-y-2 text-xs">
-            <span class="text-xs font-mono font-bold uppercase text-[#64748B] tracking-wider block">
+            <span class="text-xs font-sans font-bold uppercase text-[#64748B] tracking-wider block">
               📍 Registered Office
             </span>
             <div class="font-bold text-[#0F172A]">{SITE.legalName}</div>

@@ -27,7 +27,7 @@ import { CASE_STUDIES } from '@/lib/content';
         <div class="card-synthesia p-7 flex flex-col justify-between hover:scale-[1.01] transition-transform">
           <div>
             <div class="flex items-center justify-between gap-2 mb-4">
-              <span class="text-[11px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#EEF2FF] text-[#1B17FF] border border-[#E0E7FF]">
+              <span class="text-[11px] font-sans font-bold uppercase tracking-wider px-2.5 py-1 rounded-full bg-[#EEF2FF] text-[#1B17FF] border border-[#E0E7FF]">
                 {c.sector}
               </span>
               <div class="flex text-amber-400 text-xs">
@@ -36,10 +36,10 @@ import { CASE_STUDIES } from '@/lib/content';
             </div>
 
             <div class="my-4 p-4 rounded-2xl bg-[#EEF2FF] border border-[#E0E7FF]">
-              <div class="text-3xl font-extrabold text-[#1B17FF] font-mono tracking-tight">
+              <div class="text-3xl font-extrabold text-[#1B17FF] font-sans tracking-tight">
                 {c.stat}
               </div>
-              <div class="text-xs font-mono font-bold mt-1 text-[#1B17FF]">
+              <div class="text-xs font-sans font-bold mt-1 text-[#1B17FF]">
                 {c.statLabel}
               </div>
             </div>
@@ -59,7 +59,7 @@ import { CASE_STUDIES } from '@/lib/content';
             <div class="text-xs text-[#64748B] mt-0.5">
               {c.role}
             </div>
-            <div class="text-[11px] font-mono text-[#64748B] mt-1">
+            <div class="text-[11px] font-sans text-[#64748B] mt-1">
               {c.client} • {c.location}
             </div>
           </div>

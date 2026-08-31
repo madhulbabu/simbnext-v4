@@ -22,7 +22,7 @@ const { desk } = Astro.props;
       <div class="max-w-3xl space-y-4">
         <div class="flex items-center gap-3">
           <span class="chip-synthesia">{desk.category}</span>
-          <span class="text-xs font-mono text-[#64748B]">Desk {desk.index} of 06</span>
+          <span class="text-xs font-sans text-[#64748B]">Desk {desk.index} of 06</span>
         </div>
         <h1 class="headline-lg text-[#0F172A] [text-wrap:balance]">
           {desk.name}
@@ -55,7 +55,7 @@ const { desk } = Astro.props;
         <div class="space-y-10">
           <!-- SLA Guarantee Box (Ice Blue Tint) -->
           <div class="rounded-2xl bg-[#EEF2FF] p-6 border border-[#E0E7FF]">
-            <div class="flex items-center gap-2 text-xs font-mono font-bold text-[#1B17FF] uppercase tracking-wider mb-2">
+            <div class="flex items-center gap-2 text-xs font-sans font-bold text-[#1B17FF] uppercase tracking-wider mb-2">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
               </svg>
@@ -115,7 +115,7 @@ const { desk } = Astro.props;
                   ]}
                 >
                   <span>{d.name}</span>
-                  <span class="text-[10px] font-mono text-[#64748B]">{d.index}</span>
+                  <span class="text-[10px] font-sans text-[#64748B]">{d.index}</span>
                 </a>
               ))}
             </div>

@@ -4,43 +4,145 @@ import { SITE } from '@/lib/site-config';
 ---
 
 <BaseLayout
-  title="Terms of Service | SIMBNEXT"
-  description="Terms of service governing SIMBNEXT digital operations command center retainers and SLAs."
+  title="Terms & Conditions | SIMBNEXT"
+  description="Terms and conditions governing SIMBNEXT digital operations command center retainers, payments, SLAs, and digital fulfillment."
 >
   <!-- Light Header Section -->
   <div class="pt-36 pb-16 bg-gradient-to-b from-[#EEF2FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
     <div class="container-wide max-w-3xl space-y-3">
-      <span class="chip-synthesia">Governance & Compliance</span>
-      <h1 class="headline-lg text-[#0F172A]">Terms of Service</h1>
-      <p class="text-xs text-[#64748B] font-sans">Last updated: 2026</p>
+      <span class="chip-synthesia">Legal & Governance</span>
+      <h1 class="headline-lg text-[#0F172A]">Terms & Conditions</h1>
+      <p class="text-xs text-[#64748B] font-sans">Last updated: August 2026</p>
     </div>
   </div>
 
   <div class="py-16 bg-[#FFFFFF]">
-    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-6 text-[#334155]">
-      <p>
-        These Terms of Service govern your engagement with {SITE.legalName} ("SIMBNEXT") for digital operations command center retainers, software management, and automation services.
-      </p>
+    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-8 text-[#334155] leading-relaxed">
+      
+      <section class="space-y-3">
+        <p>
+          These Terms & Conditions ("Terms", "Agreement") constitute a legally binding agreement between you (whether acting individually or on behalf of an entity, "Client", "You") and <strong>{SITE.legalName}</strong> (operating under the brand name <strong>"{SITE.name}"</strong>, "we", "us", or "our"), governing your access to and use of <a href={SITE.url} class="text-[#1B17FF] underline">{SITE.url}</a> and our digital operations command center retainers, software management, automation, and consulting services.
+        </p>
+        <p>
+          By engaging our services, signing an operational brief, or making payment for any retainer, you agree to be bound by these Terms.
+        </p>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">1. Scope of Engagement</h2>
-      <p>
-        Services are structured through modular coverage across our 6 Desks (Brand Desk, Presence Desk, Growth Desk, Systems Desk, Build Desk, and AI & Intelligence Desk) operating under agreed monthly Service Level Agreements (SLAs).
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">1. Eligibility & Representation</h2>
+        <p>
+          By engaging {SITE.name}, you represent and warrant that you are at least 18 years of age, legally competent to enter into binding contracts, and possess the necessary authority to bind the entity or business on whose behalf you are purchasing services.
+        </p>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">2. Retainers & Coverage</h2>
-      <p>
-        Engagements operate on predictable monthly retainers billed at the start of each service cycle. There are no hidden hourly markups or surprise task surcharges.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">2. Scope of Services & The 6 Desks</h2>
+        <p>
+          {SITE.name} provides integrated digital operations structured across six operational desks:
+        </p>
+        <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+          <li><strong>Brand Desk:</strong> Visual identity, design systems, collateral, presentations, and brand voice governance.</li>
+          <li><strong>Presence Desk:</strong> Sub-second web infrastructure, SEO governance, profile management, and uptime monitoring.</li>
+          <li><strong>Growth Desk:</strong> Performance ad campaigns (Meta/Google), acquisition funnels, and lifecycle messaging.</li>
+          <li><strong>Systems Desk:</strong> CRM setup, automated workflows (Make/Zapier/n8n), SOPs, and cross-tool data routing.</li>
+          <li><strong>Build Desk:</strong> Custom client portals, internal dashboards, bespoke web tools, and rapid development sprints.</li>
+          <li><strong>AI & Intelligence Desk:</strong> 24/7 autonomous triage agents, executive intelligence dashboards, and smart knowledge bases.</li>
+        </ul>
+        <p class="text-xs text-[#64748B]">
+          Specific active desks, deliverables, and service levels are defined in your active Retainer Plan or Onboarding Brief.
+        </p>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">3. Intellectual Property Ownership</h2>
-      <p>
-        Upon payment, all custom creative assets, website code, portal software, workflows, and brand guidelines created specifically for your business belong 100% to you.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">3. Billing, Invoicing & Payment Terms</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>3.1 Retainer Fees:</strong> Services operate on predictable monthly subscription retainers billed in advance at the beginning of each billing cycle (e.g., Tier 01 Foundation, Tier 02 Growth, Tier 03 Command, or custom enterprise agreements).
+          </p>
+          <p>
+            <strong>3.2 Payment Processing:</strong> Payments are securely processed through authorized, PCI-DSS compliant third-party payment gateways (including Razorpay, Stripe, wire transfer, or authorized banking partners). We do not store raw credit/debit card numbers or CVVs on our servers.
+          </p>
+          <p>
+            <strong>3.3 Taxes & Invoicing:</strong> All fees are exclusive of applicable taxes (such as Goods and Services Tax / GST in India), which will be itemized on formal tax invoices provided upon transaction confirmation.
+          </p>
+          <p>
+            <strong>3.4 Late Payments:</strong> Invoices remaining unpaid past their due date may result in a temporary suspension of active delivery sprints until the account is brought current.
+          </p>
+        </div>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">4. Cancellation & Notice</h2>
-      <p>
-        Following any initial sprint or guarantee period, partnerships operate month-to-month and may be cancelled with a simple 30-day written notice.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">4. Digital Delivery & Fulfillment Policy</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>4.1 Pure Digital Delivery:</strong> {SITE.name} delivers exclusively digital, technological, design, and operational services. <strong>No physical goods or tangible shipments are produced or dispatched.</strong>
+          </p>
+          <p>
+            <strong>4.2 Fulfillment Timelines:</strong> Upon successful payment and receipt of initial onboarding materials:
+          </p>
+          <ul class="list-disc pl-5 space-y-1 text-xs sm:text-sm">
+            <li>Onboarding confirmation, Ops Lead introduction, and dashboard access credentials are dispatched via email within <strong>24 to 48 business hours</strong>.</li>
+            <li>Operational kickoff and Sprint Zero roadmap execution begin immediately thereafter in accordance with the agreed schedule.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">5. Intellectual Property & Asset Ownership</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>5.1 100% Client Ownership:</strong> Upon receipt of full payment for the relevant service cycle, all custom source code, design assets, brand guidelines, copywriting, custom portal components, and automation configurations created specifically for you belong 100% to you.
+          </p>
+          <p>
+            <strong>5.2 Pre-Existing Frameworks:</strong> Any general pre-existing boilerplate libraries, proprietary internal scripts, or open-source tooling incorporated into deliverables remain licensed to you on a perpetual, non-exclusive, royalty-free basis for your internal business operations.
+          </p>
+        </div>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">6. Confidentiality & Non-Disclosure</h2>
+        <p>
+          Both parties agree to treat all commercial, financial, operational, and customer data shared during the partnership as strictly confidential. {SITE.name} will not disclose, sell, or leverage your proprietary operational data for any purpose outside the fulfillment of your active desks.
+        </p>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">7. Cancellations, Renewals & 90-Day Guarantee</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>7.1 The 90-Day Comfort Guarantee:</strong> Eligible first-time retainer clients benefit from our 90-Day Comfort Guarantee as detailed in our <a href="/refunds" class="text-[#1B17FF] underline font-semibold">Cancellation & Refund Policy</a>.
+          </p>
+          <p>
+            <strong>7.2 Month-to-Month Retainer Cancellation:</strong> Outside the guarantee window, retainers operate on a month-to-month basis and can be cancelled with a 30-day written notice sent via email to <a href={`mailto:${SITE.email}`} class="text-[#1B17FF] underline">{SITE.email}</a>.
+          </p>
+        </div>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">8. Limitation of Liability & Indemnification</h2>
+        <p>
+          To the maximum extent permitted by applicable law, neither party shall be liable for indirect, incidental, special, consequential, or punitive damages. The total aggregate liability of {SITE.name} arising out of or related to these Terms shall not exceed the total retainer fees paid by Client to {SITE.name} in the one (1) month immediately preceding the event giving rise to liability.
+        </p>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">9. Governing Law & Dispute Resolution</h2>
+        <p>
+          These Terms and any contractual or non-contractual disputes arising hereunder shall be governed by, interpreted, and construed in accordance with the laws of <strong>India</strong>. The courts located in <strong>Hyderabad, Telangana, India</strong> shall have exclusive jurisdiction over any legal proceedings arising out of or in connection with these Terms.
+        </p>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">10. Contact & Official Notices</h2>
+        <div class="p-6 rounded-2xl bg-[#EEF2FF] border border-[#E0E7FF] text-xs space-y-1.5">
+          <p class="font-bold text-sm text-[#0F172A]">{SITE.legalName}</p>
+          <p><strong>Registered Address:</strong> {SITE.address.formatted}</p>
+          <p><strong>Official Email:</strong> <a href={`mailto:${SITE.email}`} class="text-[#1B17FF] underline">{SITE.email}</a></p>
+          <p><strong>Support & Billing:</strong> <a href={`mailto:${SITE.supportEmail}`} class="text-[#1B17FF] underline">{SITE.supportEmail}</a></p>
+          <p><strong>Phone:</strong> {SITE.phone} ({SITE.operatingHours})</p>
+        </div>
+      </section>
+
     </div>
   </div>
 </BaseLayout>

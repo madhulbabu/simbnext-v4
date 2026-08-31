@@ -206,17 +206,22 @@ const whatsappMsg = encodeURIComponent(
             </div>
           </div>
 
-          <!-- 3. Registered Office Card -->
-          <div class="p-6 rounded-3xl bg-[#FFFFFF] border border-[#E2E8F0] space-y-2 text-xs">
+          <!-- 3. Registered Office & Compliance Card -->
+          <div class="p-6 rounded-3xl bg-[#FFFFFF] border border-[#E2E8F0] space-y-3 text-xs">
             <span class="text-xs font-sans font-bold uppercase text-[#64748B] tracking-wider block">
-              📍 Registered Office
+              📍 Registered Office & Compliance
             </span>
-            <div class="font-bold text-[#0F172A]">{SITE.legalName}</div>
+            <div class="font-bold text-sm text-[#0F172A]">{SITE.legalName}</div>
             <p class="text-[#475569] leading-relaxed">
               {SITE.address.line1}<br />
               {SITE.address.line2}<br />
               {SITE.address.country}
             </p>
+            <div class="pt-2 border-t border-[#E2E8F0] space-y-1 text-[#64748B]">
+              <p><strong>Operating Hours:</strong> {SITE.operatingHours}</p>
+              <p><strong>Support & Billing:</strong> <a href={`mailto:${SITE.supportEmail}`} class="text-[#1B17FF] underline">{SITE.supportEmail}</a></p>
+              <p><strong>Grievance Redressal:</strong> <a href={`mailto:${SITE.grievanceOfficer.email}`} class="text-[#1B17FF] underline">{SITE.grievanceOfficer.email}</a></p>
+            </div>
           </div>
         </div>
 

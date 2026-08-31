@@ -4,45 +4,115 @@ import { SITE } from '@/lib/site-config';
 ---
 
 <BaseLayout
-  title="Refunds & 90-Day Comfort Guarantee | SIMBNEXT"
-  description="Our 90-Day Comfort Guarantee, SLA commitments, and transparent service terms at SIMBNEXT."
+  title="Cancellation, Refund & Fulfillment Policy | SIMBNEXT"
+  description="Our 90-Day Comfort Guarantee, refund processing timelines (5-7 business days), cancellation terms, and digital service fulfillment policy at SIMBNEXT."
 >
   <!-- Light Header Section -->
   <div class="pt-36 pb-16 bg-gradient-to-b from-[#EEF2FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
     <div class="container-wide max-w-3xl space-y-3">
-      <span class="chip-synthesia">Governance & Risk Reversal</span>
-      <h1 class="headline-lg text-[#0F172A]">Refunds & 90-Day Comfort Guarantee</h1>
-      <p class="text-xs text-[#64748B] font-sans">Last updated: 2026</p>
+      <span class="chip-synthesia">Risk Reversal & Fair Terms</span>
+      <h1 class="headline-lg text-[#0F172A]">Cancellation & Refund Policy</h1>
+      <p class="text-xs text-[#64748B] font-sans">Last updated: August 2026</p>
     </div>
   </div>
 
   <div class="py-16 bg-[#FFFFFF]">
-    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-6 text-[#334155]">
-      <p>
-        At {SITE.legalName}, we operate on explicit Service Level Agreements (SLAs) and total accountability. Our engagement terms are designed to be completely fair, transparent, and low-friction.
-      </p>
+    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-8 text-[#334155] leading-relaxed">
+      
+      <section class="space-y-3">
+        <p>
+          At <strong>{SITE.legalName}</strong> ("{SITE.name}"), we believe business partnerships must be built on total operational accountability, measurable execution, and fair, transparent commercial terms.
+        </p>
+        <p>
+          This policy outlines our <strong>90-Day Comfort Guarantee</strong>, standard retainer cancellation procedures, refund processing turnaround timelines, and our digital service delivery policy.
+        </p>
+      </section>
 
-      <div class="p-6 rounded-2xl bg-[#EEF2FF] border border-[#E0E7FF] space-y-2">
-        <h2 class="text-base font-bold text-[#1B17FF] m-0">The 90-Day Comfort Guarantee</h2>
-        <p class="text-sm text-[#0F172A] font-medium leading-relaxed m-0">
-          If at any point in the first 90 days you feel your digital operations aren't noticeably smoother, your communication isn't clearer, or your vendor headaches haven't disappeared—we will offboard you smoothly and refund your last month's retainer in full. No friction.
+      <!-- The 90-Day Comfort Guarantee Callout Box -->
+      <div class="p-6 sm:p-8 rounded-3xl bg-[#EEF2FF] border border-[#E0E7FF] space-y-3 shadow-xs">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-xs font-bold text-[#1B17FF] border border-[#E0E7FF]">
+          <span class="h-2 w-2 rounded-full bg-[#10B981] animate-pulse"></span>
+          <span>Zero-Friction Guarantee</span>
+        </div>
+        <h2 class="text-xl font-bold text-[#0F172A] m-0">The 90-Day Comfort Guarantee</h2>
+        <p class="text-sm text-[#334155] leading-relaxed m-0">
+          If at any point during the first 90 calendar days of your retainer you genuinely feel that your digital operations are not noticeably smoother, your communication is not clearer, or your vendor headaches have not disappeared—simply let us know in writing. We will offboard you smoothly, transfer 100% of your assets, and <strong>refund your last month's retainer in full</strong>. No arguments. No friction.
         </p>
       </div>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">1. Monthly Retainer Cycles</h2>
-      <p>
-        Because monthly retainers allocate dedicated specialist capacity across active Desks (Brand, Presence, Growth, Systems, Build, AI) and cloud infrastructure, standard monthly retainers outside the 90-Day Comfort Guarantee period are non-refundable once the monthly billing cycle has commenced.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">1. Standard Monthly Retainer Terms</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>1.1 Active Capacity Allocation:</strong> Monthly retainers reserve dedicated engineering, design, and operations specialist capacity across your active Desks (Brand, Presence, Growth, Systems, Build, AI).
+          </p>
+          <p>
+            <strong>1.2 Post-Guarantee Cycles:</strong> Outside the initial 90-Day Comfort Guarantee period, retainer fees for an actively commenced billing cycle are generally non-refundable once work sprints have initiated for that month.
+          </p>
+        </div>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">2. SLA Performance Credits</h2>
-      <p>
-        In the rare event that a critical delivery SLA or 99.8% web uptime commitment is materially breached without prior notice, we provide service credits toward your subsequent monthly retainer.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">2. Cancellation Policy & Procedure</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>2.1 Month-to-Month Flexibility:</strong> Retainer plans operate on flexible month-to-month terms and may be cancelled at any time by providing a <strong>30-day written notice</strong> via email to <a href={`mailto:${SITE.supportEmail}`} class="text-[#1B17FF] underline">{SITE.supportEmail}</a>.
+          </p>
+          <p>
+            <strong>2.2 Offboarding & Asset Handover:</strong> Upon receiving a cancellation notice, we complete all scheduled deliverables for the final billing cycle and deliver a clean, documented export of all source code, design assets, and CRM workflows.
+          </p>
+        </div>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">3. Offboarding & Transition Assistance</h2>
-      <p>
-        If you ever choose to cancel, we provide full transition assistance: packaging and handing over all code, design files, CRM automations, and documentation with zero hostage-taking.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">3. Refund Processing Timelines & Banking SLA</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>3.1 Approval Turnaround:</strong> Refund requests submitted under the 90-Day Comfort Guarantee or due to an authorized billing adjustment are reviewed and acknowledged within <strong>24 to 48 business hours</strong>.
+          </p>
+          <p>
+            <strong>3.2 Settlement Timeline:</strong> Approved refunds are initiated immediately and credited back to the <strong>original payment method</strong> (Credit Card, Debit Card, Net Banking, or UPI) within <strong>5 to 7 business days</strong>, subject to your bank or card issuer's standard clearing schedule.
+          </p>
+        </div>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">4. Digital Delivery & Service Fulfillment Policy</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>4.1 No Physical Shipments:</strong> As {SITE.name} provides digital operations command center and software services, <strong>no physical items, parcels, or goods are shipped</strong>.
+          </p>
+          <p>
+            <strong>4.2 Digital Fulfillment SLA:</strong> Access to digital deliverables, client dashboards, and communication channels is fulfilled digitally:
+          </p>
+          <ul class="list-disc pl-5 space-y-1 text-xs sm:text-sm">
+            <li>Onboarding confirmation and dashboard credentials are sent via email within <strong>24 to 48 hours</strong> of invoice settlement.</li>
+            <li>Weekly Monday Briefings and real-time sprint milestones are delivered directly via our secure digital client dashboard and email.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">5. SLA Performance & Service Credits</h2>
+        <p>
+          If {SITE.name} materially fails to meet a critical delivery SLA or our 99.8% web uptime commitment without prior notice, we will credit your subsequent monthly retainer proportionally in accordance with your Service Agreement.
+        </p>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">6. How to Request a Cancellation or Refund</h2>
+        <p>
+          To initiate a cancellation, claim the 90-Day Guarantee, or inquire about a billing matter, please email our support team with your company name and account details:
+        </p>
+        <div class="p-6 rounded-2xl bg-[#EEF2FF] border border-[#E0E7FF] text-xs space-y-1.5">
+          <p class="font-bold text-sm text-[#0F172A]">{SITE.legalName} — Billing Support</p>
+          <p><strong>Email:</strong> <a href={`mailto:${SITE.supportEmail}`} class="text-[#1B17FF] underline">{SITE.supportEmail}</a></p>
+          <p><strong>General Inquiries:</strong> <a href={`mailto:${SITE.email}`} class="text-[#1B17FF] underline">{SITE.email}</a></p>
+          <p><strong>Phone:</strong> {SITE.phone} ({SITE.operatingHours})</p>
+          <p><strong>Registered Address:</strong> {SITE.address.formatted}</p>
+        </div>
+      </section>
+
     </div>
   </div>
 </BaseLayout>

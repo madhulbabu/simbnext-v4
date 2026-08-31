@@ -5,42 +5,114 @@ import { SITE } from '@/lib/site-config';
 
 <BaseLayout
   title="Privacy Policy | SIMBNEXT"
-  description="Privacy policy and data governance practices at SIMBNEXT."
+  description="Privacy policy and data governance practices at SIMBNEXT, including data security, third-party payment processing, and grievance redressal."
 >
   <!-- Light Header Section -->
   <div class="pt-36 pb-16 bg-gradient-to-b from-[#EEF2FF] via-[#F8FAFC] to-white text-[#0F172A] border-b border-[#E2E8F0]">
     <div class="container-wide max-w-3xl space-y-3">
-      <span class="chip-synthesia">Governance & Compliance</span>
+      <span class="chip-synthesia">Privacy & Compliance</span>
       <h1 class="headline-lg text-[#0F172A]">Privacy Policy</h1>
-      <p class="text-xs text-[#64748B] font-sans">Last updated: 2026</p>
+      <p class="text-xs text-[#64748B] font-sans">Last updated: August 2026</p>
     </div>
   </div>
 
   <div class="py-16 bg-[#FFFFFF]">
-    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-6 text-[#334155]">
-      <p>
-        At {SITE.legalName} ("SIMBNEXT"), we respect your privacy and are committed to protecting any personal, commercial, and operational business data you share with us.
-      </p>
+    <div class="container-wide max-w-3xl prose prose-neutral text-sm space-y-8 text-[#334155] leading-relaxed">
+      
+      <section class="space-y-3">
+        <p>
+          At <strong>{SITE.legalName}</strong> (operating as <strong>"{SITE.name}"</strong>, "we", "us", or "our"), accessible via <a href={SITE.url} class="text-[#1B17FF] underline">{SITE.url}</a>, we respect your privacy and are committed to protecting any personal, commercial, and operational data entrusted to us.
+        </p>
+        <p>
+          This Privacy Policy describes how we collect, process, store, and safeguard your information in accordance with applicable data protection laws, including the Information Technology Act, 2000, the Digital Personal Data Protection Act (DPDPA), and international privacy standards.
+        </p>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">1. Information We Collect</h2>
-      <p>
-        We collect contact information (such as name, email, phone number, company website, and operational bottlenecks) submitted through our briefing request and contact forms. In active partnerships, we handle client knowledge base assets, brand guidelines, and CRM connections solely to operate active Desks.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">1. Information We Collect</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>1.1 Voluntarily Provided Data:</strong> When you schedule a briefing, submit a contact inquiry, or onboard onto our command center retainers, we collect information such as:
+          </p>
+          <ul class="list-disc pl-5 space-y-1 text-xs sm:text-sm">
+            <li>Full Name, Business Email Address, Phone Number / WhatsApp Number.</li>
+            <li>Company Name, Industry, Website URL, and Monthly Operational Budget.</li>
+            <li>Commercial assets shared for desk fulfillment (e.g., brand guidelines, ad accounts, CRM API tokens, CMS access).</li>
+          </ul>
+          <p>
+            <strong>1.2 Automatically Collected Data:</strong> When you navigate our website, our edge servers may log anonymous diagnostic telemetry, such as browser type, operating system, IP address, and page interaction timestamps.
+          </p>
+        </div>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">2. How We Use Data</h2>
-      <p>
-        Data is utilized strictly to provide digital operations services, deliver Service Level Agreements (SLAs), configure AI lead agents, and communicate weekly executive briefings. We never sell, rent, or trade client data to third parties.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">2. How We Use Your Data</h2>
+        <p>
+          We use the information collected solely for legitimate business operations and service delivery:
+        </p>
+        <ul class="list-disc pl-5 space-y-1.5 text-xs sm:text-sm">
+          <li>Fulfilling modular deliverables across your active Desks (Brand, Presence, Growth, Systems, Build, AI).</li>
+          <li>Sending weekly executive Monday Briefings, SLA performance reports, and invoice notifications.</li>
+          <li>Processing payments, calculating statutory taxes (GST), and generating formal accounts documentation.</li>
+          <li>Operating autonomous AI customer support and triage agents tailored exclusively to your business knowledge base.</li>
+        </ul>
+        <p class="text-xs text-[#0F172A] font-semibold">
+          We do not sell, rent, monetize, or trade your personal or operational data with any third-party advertisers.
+        </p>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">3. Data Security & Storage</h2>
-      <p>
-        All lead interactions, knowledge base vectors, and API communications are secured using industry-standard encryption protocols and enterprise cloud infrastructure.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">3. Payment Gateway Security & Third-Party Processors</h2>
+        <div class="space-y-2">
+          <p>
+            <strong>3.1 PCI-DSS Payment Processing:</strong> Online transactions are handled exclusively through secure, certified PCI-DSS Level 1 compliant payment gateways (including <strong>Razorpay</strong> and <strong>Stripe</strong>).
+          </p>
+          <p>
+            <strong>3.2 Zero Card Storage:</strong> {SITE.name} never receives, processes, or stores your raw payment card numbers, CVVs, or net banking credentials on our servers. All financial transactions are directly encrypted and tokenized by the payment gateway.
+          </p>
+          <p>
+            <strong>3.3 Infrastructure Partners:</strong> We utilize secure global cloud providers (such as Cloudflare, AWS, or Google Cloud) solely for edge hosting, DNS governance, and encrypted database backups.
+          </p>
+        </div>
+      </section>
 
-      <h2 class="text-lg font-bold text-[#0F172A] mt-6">4. Contact Inquiries</h2>
-      <p>
-        For any privacy or data compliance questions, contact us at <a href={`mailto:${SITE.email}`} class="text-[#1B17FF] underline">{SITE.email}</a>.
-      </p>
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">4. Cookies & Web Analytics</h2>
+        <p>
+          We use minimal, privacy-centric cookies strictly necessary for website navigation, user session persistence, and aggregate performance monitoring. You can configure your browser to reject cookies; however, certain portal functions may be limited.
+        </p>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">5. Data Security & Storage Standards</h2>
+        <p>
+          We implement rigorous technical and organizational measures to protect your data, including TLS 1.3 encryption in transit, AES-256 encryption at rest, role-based least-privilege employee access controls, and regular vulnerability audits.
+        </p>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">6. Data Retention & Your Rights</h2>
+        <p>
+          We retain personal data only as long as necessary to fulfill active retainers or satisfy legal and statutory tax accounting requirements. You have the right to request access to, correction of, or permanent deletion of your personal data by emailing <a href={`mailto:${SITE.email}`} class="text-[#1B17FF] underline">{SITE.email}</a>.
+        </p>
+      </section>
+
+      <section class="space-y-3 border-t border-[#E2E8F0] pt-6">
+        <h2 class="text-base font-bold text-[#0F172A]">7. Statutory Grievance Redressal Mechanism</h2>
+        <p>
+          In accordance with the Information Technology Act, 2000, and the Consumer Protection (E-Commerce) Rules, the details of our designated Grievance Redressal Officer are as follows:
+        </p>
+        <div class="p-6 rounded-2xl bg-[#EEF2FF] border border-[#E0E7FF] text-xs space-y-1.5">
+          <p class="font-bold text-sm text-[#0F172A]">{SITE.grievanceOfficer.name}</p>
+          <p><strong>Designation:</strong> {SITE.grievanceOfficer.designation}</p>
+          <p><strong>Company:</strong> {SITE.legalName}</p>
+          <p><strong>Postal Address:</strong> {SITE.grievanceOfficer.address}</p>
+          <p><strong>Email:</strong> <a href={`mailto:${SITE.grievanceOfficer.email}`} class="text-[#1B17FF] underline">{SITE.grievanceOfficer.email}</a></p>
+          <p><strong>Phone:</strong> {SITE.grievanceOfficer.phone} ({SITE.operatingHours})</p>
+          <p class="text-[11px] text-[#64748B] pt-1">Grievances are acknowledged within 24 hours and addressed within 15 business days.</p>
+        </div>
+      </section>
+
     </div>
   </div>
 </BaseLayout>
